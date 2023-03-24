@@ -16,6 +16,6 @@ func _ready():
 #	pass
 
 
-func _on_creditos_button_down():
-	get_tree().change_scene("res://Menu/creditos/fondo_de_credito.tscn")
+func _on_regreso_menu_button_down():
+	get_tree().change_scene("res://Menu/Menu.tscn")
 	pass # Replace with function body.

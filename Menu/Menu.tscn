@@ -1,25 +1,25 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu/inicio.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Menu/creditos.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menu/creditos/creditos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menu/salir.tscn" type="PackedScene" id=3]
 
 [node name="Menu" type="Node2D"]
 
 [node name="inicio" parent="." instance=ExtResource( 1 )]
-margin_left = 506.0
-margin_top = 287.0
-margin_right = 546.0
-margin_bottom = 327.0
+margin_left = 400.0
+margin_top = 301.0
+margin_right = 578.0
+margin_bottom = 363.0
 
 [node name="creditos" parent="." instance=ExtResource( 2 )]
-margin_left = 506.0
-margin_top = 389.0
-margin_right = 546.0
-margin_bottom = 429.0
+margin_left = 402.0
+margin_top = 393.0
+margin_right = 590.0
+margin_bottom = 453.0
 
 [node name="salir" parent="." instance=ExtResource( 3 )]
-margin_left = 505.0
-margin_top = 485.0
-margin_right = 545.0
-margin_bottom = 525.0
+margin_left = 407.0
+margin_top = 487.0
+margin_right = 591.0
+margin_bottom = 543.0

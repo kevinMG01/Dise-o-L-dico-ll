@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu/creditos/regreso_menu.tscn" type="PackedScene" id=1]
+
+[node name="fondo_de_credito" type="Node2D"]
+
+[node name="regreso_menu" parent="." instance=ExtResource( 1 )]
+margin_left = 777.0
+margin_top = 91.0
+margin_right = 837.0
+margin_bottom = 151.0
