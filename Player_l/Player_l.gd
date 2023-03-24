@@ -44,7 +44,7 @@ func jump():
 		salto = 0
 		suelo = true
 		
-		if Input.is_action_pressed("ui_accept") && salto < max_jump:
+		if Input.is_action_just_pressed("ui_accept") && salto < max_jump:
 			print("hola")
 			suelo = false
 			if salto == 0:
