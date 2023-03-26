@@ -24,6 +24,6 @@ func _rotacion_player_1():
 
 func _rotacion_player_2():
 	if global_Var.plat_player_2 == 1:
-		get_node("plataforma_player_ll").rotation = vel
+		get_node("plataforma_player_ll").rotation = speed
 	if global_Var.plat_player_2 == 2:
-		get_node("plataforma_player_ll").rotation = nor
+		get_node("plataforma_player_ll").rotation = normal
