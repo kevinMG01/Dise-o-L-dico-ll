@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/salir.png-6e62aa82acfe544c7ddad7248ff2a82f.stex"
+path="res://.import/J2iddle.png-79b99422e15639724468edc70a489923.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/Plataforma_player_l/salir.png"
-dest_files=[ "res://.import/salir.png-6e62aa82acfe544c7ddad7248ff2a82f.stex" ]
+source_file="res://Player_ll/Sprite/J2iddle.png"
+dest_files=[ "res://.import/J2iddle.png-79b99422e15639724468edc70a489923.stex" ]
 
 [params]
 

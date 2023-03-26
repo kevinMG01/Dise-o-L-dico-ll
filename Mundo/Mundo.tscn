@@ -1,24 +1,30 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player_ll/Player_ll.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Item/boton_player_l/boton_player_l.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_ll.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Mundo/Mundo.gd" type="Script" id=7]
 
 [node name="Mundo" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="Player_l" parent="." instance=ExtResource( 1 )]
 position = Vector2( 239, 235 )
 
-[node name="Player_ll" parent="Player_l" instance=ExtResource( 3 )]
-position = Vector2( 347, 55 )
+[node name="Player_ll" parent="." instance=ExtResource( 3 )]
+position = Vector2( 586, 290 )
 
 [node name="suelo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 349, 585 )
 
 [node name="boton_player_l" parent="." instance=ExtResource( 4 )]
-position = Vector2( 87, 507 )
+position = Vector2( 135, 415 )
+
+[node name="plataforma_player_l" parent="." instance=ExtResource( 6 )]
+position = Vector2( 34, 307 )
 
 [node name="plataforma_player_ll" parent="." instance=ExtResource( 5 )]
-position = Vector2( 354, 323 )
+position = Vector2( 427, 195 )
