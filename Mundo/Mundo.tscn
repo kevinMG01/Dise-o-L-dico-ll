@@ -24,21 +24,42 @@ position = Vector2( 586, 290 )
 position = Vector2( 349, 585 )
 
 [node name="boton_player_ll" parent="." instance=ExtResource( 8 )]
-position = Vector2( 98, 518 )
+position = Vector2( 328, 520 )
 
 [node name="boton_player_l" parent="." instance=ExtResource( 4 )]
-position = Vector2( 686, 528 )
+position = Vector2( 488, 520 )
 
-[node name="plataforma_player_l" parent="." instance=ExtResource( 6 )]
-position = Vector2( 113, 421 )
+[node name="plata_player_l" type="Node2D" parent="."]
+position = Vector2( 120, 400 )
 
-[node name="plataforma_player_ll" parent="." instance=ExtResource( 5 )]
-position = Vector2( 893, 417 )
+[node name="plataforma_player_l" parent="plata_player_l" instance=ExtResource( 6 )]
+position = Vector2( -8, 32 )
+
+[node name="plataforma_player_l2" parent="plata_player_l" instance=ExtResource( 6 )]
+position = Vector2( -16, -104 )
+
+[node name="plataforma_player_l3" parent="plata_player_l" instance=ExtResource( 6 )]
+position = Vector2( 792, -256 )
+
+[node name="plata_player_ll" type="Node2D" parent="."]
+
+[node name="plataforma_player_ll" parent="plata_player_ll" instance=ExtResource( 5 )]
+position = Vector2( 928, 408 )
+
+[node name="plataforma_player_ll2" parent="plata_player_ll" instance=ExtResource( 5 )]
+position = Vector2( 920, 280 )
+
+[node name="plataforma_player_ll3" parent="plata_player_ll" instance=ExtResource( 5 )]
+position = Vector2( 112, 128 )
 
 [node name="estrellas" type="Node2D" parent="."]
 
 [node name="estrella_negra" parent="estrellas" instance=ExtResource( 10 )]
-position = Vector2( 890, 347 )
+position = Vector2( 912, 352 )
 
 [node name="estrella_blanca" parent="estrellas" instance=ExtResource( 9 )]
 position = Vector2( 115, 349 )
+
+[node name="Timer_p_1" type="Timer" parent="."]
+
+[node name="Timer_p_2" type="Timer" parent="."]

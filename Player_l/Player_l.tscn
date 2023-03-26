@@ -24,7 +24,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 28, 44 )
+extents = Vector2( 14.5, 22 )
 
 [node name="Player_l" type="KinematicBody2D" groups=["player_l"]]
 position = Vector2( 260, 151 )
@@ -32,10 +32,10 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 20, -48 )
-scale = Vector2( 0.1, 0.1 )
+scale = Vector2( 0.05, 0.05 )
 frames = SubResource( 1 )
 animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 19, -43 )
+position = Vector2( 19.5, -46 )
 shape = SubResource( 2 )

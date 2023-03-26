@@ -1,14 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Item/Plataforma_player_ll/Sprite plataprma picos  (Negro).png" type="Texture" id=1]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.gd" type="Script" id=2]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 91.5, 4 )
+
 [node name="plataforma_player_ll" type="StaticBody2D"]
 script = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -103, -2 )
-polygon = PoolVector2Array( 1, 2, 190, 2, 188, 10, 153, 23, 45, 23, 8, 10 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -7.5, 4 )
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -82, 15 )
