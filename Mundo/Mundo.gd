@@ -23,11 +23,19 @@ func _physics_process(delta):
 func _rotacion_player_1():
 	if global_Var.plat_player_1 == 1:
 		get_node("plataforma_player_l").rotation = normal
+		sumar_p_1 = 0
 	if global_Var.plat_player_1 == 2:
-		get_node("plataforma_player_l").rotate(speed)
-		sumar_p_1 += 0.03
-	if sumar_p_1 >= 9.10:
-		get_node("plataforma_player_l").rotation = rot_fija_1
+		get_node("plataforma_player_l").rotation = speed
+	
+#		rotacion de plataforma
+#	if global_Var.plat_player_1 == 1:
+#		get_node("plataforma_player_l").rotation = normal
+#		sumar_p_1 = 0
+#	if global_Var.plat_player_1 == 2:
+#		get_node("plataforma_player_l").rotate(speed)
+#		sumar_p_1 += 0.03
+#		if sumar_p_1 >= 9.10:
+#			get_node("plataforma_player_l").rotation = rot_fija_1
 
 func _rotacion_player_2():
 	if global_Var.plat_player_2 == 1:

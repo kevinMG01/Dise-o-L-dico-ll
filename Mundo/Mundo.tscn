@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Mundo/Mundo.gd" type="Script" id=7]
 [ext_resource path="res://Item/boton_player_ll/boton_player_ll.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Item/estrellas/Negras/estrella_negra.tscn" type="PackedScene" id=10]
 
 [node name="Mundo" type="Node2D"]
 script = ExtResource( 7 )
@@ -32,3 +34,11 @@ position = Vector2( 113, 421 )
 
 [node name="plataforma_player_ll" parent="." instance=ExtResource( 5 )]
 position = Vector2( 893, 417 )
+
+[node name="estrellas" type="Node2D" parent="."]
+
+[node name="estrella_blanca" parent="estrellas" instance=ExtResource( 9 )]
+position = Vector2( 115, 349 )
+
+[node name="estrella_negra" parent="estrellas/estrella_blanca" instance=ExtResource( 10 )]
+position = Vector2( 775, -2 )
