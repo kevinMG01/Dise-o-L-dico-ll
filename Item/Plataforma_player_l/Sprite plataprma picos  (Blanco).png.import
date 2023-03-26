@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite plataprma picos  (Negro).png-5c9879a00cdaf3e1c8e0cbc3b51a7084.stex"
+path="res://.import/Sprite plataprma picos  (Blanco).png-976432384800e6a5e98fc7b81bf0c5d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/Plataforma_player_l/Sprite plataprma picos  (Negro).png"
-dest_files=[ "res://.import/Sprite plataprma picos  (Negro).png-5c9879a00cdaf3e1c8e0cbc3b51a7084.stex" ]
+source_file="res://Item/Plataforma_player_l/Sprite plataprma picos  (Blanco).png"
+dest_files=[ "res://.import/Sprite plataprma picos  (Blanco).png-976432384800e6a5e98fc7b81bf0c5d5.stex" ]
 
 [params]
 
