@@ -5,8 +5,8 @@ var speed = 9.41
 var normal = 0
 
 #player 2; rotacion 
-var vel = 9.41
-var nor = 0
+#var vel = 9.41
+#var nor = 0
 
 
 func _physics_process(delta):
