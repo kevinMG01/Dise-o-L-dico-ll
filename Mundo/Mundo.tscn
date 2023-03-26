@@ -37,8 +37,8 @@ position = Vector2( 893, 417 )
 
 [node name="estrellas" type="Node2D" parent="."]
 
+[node name="estrella_negra" parent="estrellas" instance=ExtResource( 10 )]
+position = Vector2( 890, 347 )
+
 [node name="estrella_blanca" parent="estrellas" instance=ExtResource( 9 )]
 position = Vector2( 115, 349 )
-
-[node name="estrella_negra" parent="estrellas/estrella_blanca" instance=ExtResource( 10 )]
-position = Vector2( 775, -2 )
