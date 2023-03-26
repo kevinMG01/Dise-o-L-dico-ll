@@ -55,3 +55,9 @@ func _rotacion_player_2():
 #		sumar_p_2 += 0.03
 #	if sumar_p_2 >= 9.10:
 #		get_node("plataforma_player_ll").rotation = rot_fija_2
+
+
+func _on_Timer_timeout():
+	global_Var.tiempo -= 1
+	global_Var.actualizar_tiempo()
+	pass 

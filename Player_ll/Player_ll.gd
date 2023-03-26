@@ -47,7 +47,6 @@ func jump():
 		suelo = true
 		
 		if Input.is_action_pressed("w") && salto < max_jump:
-			print("hola")
 			suelo = false
 			if salto == 0:
 				#animacion de salto
