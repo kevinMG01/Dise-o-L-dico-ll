@@ -1,9 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player_ll/Player_ll.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Item/boton_player_l/boton_player_l.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Item/boton_player_l/boton_1/boton_player_l.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Mundo/Mundo.gd" type="Script" id=7]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Item/estrellas/Negras/estrella_negra.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Item/Plataforma_de_boton/suelo_boton.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Item/boton_player_l/boton_2/bot_play_l_2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Item/boton_player_l/boton_3/bot_play_l_3.tscn" type="PackedScene" id=13]
 
 [node name="Mundo" type="Node2D"]
 script = ExtResource( 7 )
@@ -24,11 +26,11 @@ position = Vector2( 586, 290 )
 [node name="suelo" parent="." instance=ExtResource( 2 )]
 position = Vector2( 349, 585 )
 
-[node name="boton_player_ll" parent="." instance=ExtResource( 8 )]
-position = Vector2( 328, 520 )
-
 [node name="boton_player_l" parent="." instance=ExtResource( 4 )]
 position = Vector2( 584, 520 )
+
+[node name="boton_player_ll" parent="." instance=ExtResource( 8 )]
+position = Vector2( 328, 520 )
 
 [node name="plata_player_l" type="Node2D" parent="."]
 position = Vector2( 120, 400 )
@@ -82,5 +84,11 @@ rect_scale = Vector2( 3, 4 )
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="bot_play_l_2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 512, 320 )
+
+[node name="bot_play_l_3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 504, 144 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
