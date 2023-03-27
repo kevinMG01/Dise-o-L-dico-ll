@@ -26,15 +26,16 @@ func _rotacion_player_1_1():
 		sumar_p_1 = 0
 	if global_Var.plat_player_1 == 2:
 		get_node("plata_player_l/plataforma_player_l").rotation = speed
-#		rotacion de plataforma
-#	if global_Var.plat_player_1 == 1:
-#		get_node("plataforma_player_l").rotation = normal
-#		sumar_p_1 = 0
-#	if global_Var.plat_player_1 == 2:
-#		get_node("plataforma_player_l").rotate(speed)
-#		sumar_p_1 += 0.03
-#		if sumar_p_1 >= 9.10:
-#			get_node("plataforma_player_l").rotation = rot_fija_1
+	#	rotacion de plataforma
+	#if global_Var.plat_player_1 == 1:
+	#	get_node("plataforma_player_l").rotation = normal
+	#	sumar_p_1 = 0
+	#if global_Var.plat_player_1 == 2:
+	#	get_node("plataforma_player_l").rotate(speed)
+	#	sumar_p_1 += 0.03
+	#	if sumar_p_1 >= 9.10:
+	#		get_node("plataforma_player_l").rotation = rot_fija_1
+	
 func _rotacion_player_1_2():
 	if global_Var.plat_player_1_2 == 1:
 		get_node("plata_player_l/plataforma_player_l2").rotation = normal
