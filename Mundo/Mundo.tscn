@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
@@ -15,12 +15,39 @@
 [ext_resource path="res://Item/boton_player_l/boton_3/bot_play_l_3.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Item/boton_player_ll/boton_2/bot_player_1_2.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Mundo/fondo 1.jpeg" type="Texture" id=16]
 
 [node name="Mundo" type="Node2D"]
 script = ExtResource( 7 )
 
-[node name="suelo" parent="." instance=ExtResource( 2 )]
+[node name="Fondo1" type="Sprite" parent="."]
+position = Vector2( 516, 289 )
+scale = Vector2( 1.5, 1.6 )
+texture = ExtResource( 16 )
+
+[node name="suelo_solido" type="Node2D" parent="."]
+
+[node name="suelo" parent="suelo_solido" instance=ExtResource( 2 )]
 position = Vector2( 349, 585 )
+
+[node name="suelo4" parent="suelo_solido" instance=ExtResource( 2 )]
+position = Vector2( 335, -146 )
+
+[node name="suelo2" parent="suelo_solido" instance=ExtResource( 2 )]
+position = Vector2( -76, 225 )
+scale = Vector2( 0.1, 13 )
+
+[node name="suelo3" parent="suelo_solido" instance=ExtResource( 2 )]
+position = Vector2( 1064, 225 )
+scale = Vector2( 0.1, 13 )
+
+[node name="suelo_botones" type="Node2D" parent="."]
+
+[node name="suelo_boton" parent="suelo_botones" instance=ExtResource( 11 )]
+position = Vector2( 496, 376 )
+
+[node name="suelo_boton2" parent="suelo_botones" instance=ExtResource( 11 )]
+position = Vector2( 499, 192 )
 
 [node name="bot_play_1" type="Node2D" parent="."]
 
@@ -28,33 +55,33 @@ position = Vector2( 349, 585 )
 position = Vector2( 640, 544 )
 
 [node name="bot_play_l_2" parent="bot_play_1" instance=ExtResource( 12 )]
-position = Vector2( 545, 337 )
+position = Vector2( 544, 340 )
 
 [node name="bot_play_l_3" parent="bot_play_1" instance=ExtResource( 13 )]
-position = Vector2( 544, 152 )
+position = Vector2( 545, 156 )
 
 [node name="bot_play_2" type="Node2D" parent="."]
 
 [node name="boton_player_ll" parent="bot_play_2" instance=ExtResource( 8 )]
 position = Vector2( 384, 544 )
 
-[node name="bot_player_1_2" parent="bot_play_2" instance=ExtResource( 14 )]
-position = Vector2( 441, 336 )
+[node name="bot_player_1_22" parent="bot_play_2" instance=ExtResource( 14 )]
+position = Vector2( 448, 339 )
 
 [node name="bot_player_1_3" parent="bot_play_2" instance=ExtResource( 15 )]
-position = Vector2( 440, 152 )
+position = Vector2( 455, 155 )
 
 [node name="Player_l" parent="." instance=ExtResource( 1 )]
-position = Vector2( 239, 235 )
+position = Vector2( 936, 544 )
 
 [node name="Player_ll" parent="." instance=ExtResource( 3 )]
-position = Vector2( 680, 384 )
+position = Vector2( 48, 512 )
 
 [node name="plata_player_l" type="Node2D" parent="."]
 position = Vector2( 120, 400 )
 
 [node name="plataforma_player_l" parent="plata_player_l" instance=ExtResource( 6 )]
-position = Vector2( -8, 32 )
+position = Vector2( -19, 19 )
 
 [node name="plataforma_player_l2" parent="plata_player_l" instance=ExtResource( 6 )]
 position = Vector2( -16, -104 )
@@ -65,29 +92,13 @@ position = Vector2( 792, -256 )
 [node name="plata_player_ll" type="Node2D" parent="."]
 
 [node name="plataforma_player_ll" parent="plata_player_ll" instance=ExtResource( 5 )]
-position = Vector2( 928, 408 )
+position = Vector2( 928, 403 )
 
 [node name="plataforma_player_ll2" parent="plata_player_ll" instance=ExtResource( 5 )]
 position = Vector2( 920, 280 )
 
 [node name="plataforma_player_ll3" parent="plata_player_ll" instance=ExtResource( 5 )]
 position = Vector2( 112, 128 )
-
-[node name="estrellas" type="Node2D" parent="."]
-
-[node name="estrella_negra" parent="estrellas" instance=ExtResource( 10 )]
-position = Vector2( 912, 352 )
-
-[node name="estrella_blanca" parent="estrellas" instance=ExtResource( 9 )]
-position = Vector2( 115, 349 )
-
-[node name="suelo_botones" type="Node2D" parent="."]
-
-[node name="suelo_boton" parent="suelo_botones" instance=ExtResource( 11 )]
-position = Vector2( 496, 376 )
-
-[node name="suelo_boton2" parent="suelo_botones" instance=ExtResource( 11 )]
-position = Vector2( 499, 192 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -102,5 +113,27 @@ rect_scale = Vector2( 3, 4 )
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="estrellas_blancas" type="Node2D" parent="."]
+
+[node name="estrella_blanca" parent="estrellas_blancas" instance=ExtResource( 9 )]
+position = Vector2( 109, 351 )
+
+[node name="estrella_blanca3" parent="estrellas_blancas" instance=ExtResource( 9 )]
+position = Vector2( 915, 90 )
+
+[node name="estrella_blanca2" parent="estrellas_blancas" instance=ExtResource( 9 )]
+position = Vector2( 105, 244 )
+
+[node name="estrellas_negras" type="Node2D" parent="."]
+
+[node name="estrella_negra" parent="estrellas_negras" instance=ExtResource( 10 )]
+position = Vector2( 912, 352 )
+
+[node name="estrella_negra3" parent="estrellas_negras" instance=ExtResource( 10 )]
+position = Vector2( 99, 61 )
+
+[node name="estrella_negra2" parent="estrellas_negras" instance=ExtResource( 10 )]
+position = Vector2( 881, 219 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

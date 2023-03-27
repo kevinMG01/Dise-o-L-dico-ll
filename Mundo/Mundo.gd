@@ -11,12 +11,22 @@ var sumar_p_2 = 0
 var rot_fija_2 = 0
 
 
+func _process(delta):
+	pass
+
 func _physics_process(delta):
 	_rotacion_player_1_1()
 	_rotacion_player_1_2()
 	_rotacion_player_1_3()
 	
 	_rotacion_player_2_1()
+	_rotacion_player_2_2()
+	_rotacion_player_2_3()
+	if global_Var.tiempo <= 0:
+		get_tree().change_scene("res://Menu/Menu.tscn")
+		global_Var.tiempo = 50
+	if global_Var.puntos_player_1 == 6:
+		get_tree().change_scene("res://Mundo/Nivel_2/Nivel_2.tscn")
 	
 	
 #rotacion de player 1

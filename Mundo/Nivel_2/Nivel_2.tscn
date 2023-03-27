@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="Nivel_2" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 194.0
+margin_top = 222.0
+margin_right = 301.0
+margin_bottom = 236.0
+rect_scale = Vector2( 6, 6 )
+text = "Gracias por jugar"
