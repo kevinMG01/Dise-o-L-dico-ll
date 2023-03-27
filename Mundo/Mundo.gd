@@ -19,7 +19,7 @@ func _physics_process(delta):
 	_rotacion_player_2_1()
 	
 	
-	
+#rotacion de player 1
 func _rotacion_player_1_1():
 	if global_Var.plat_player_1 == 1:
 		get_node("plata_player_l/plataforma_player_l").rotation = normal
@@ -49,14 +49,24 @@ func _rotacion_player_1_3():
 		sumar_p_1 = 0
 	if global_Var.plat_player_1_3 == 2:
 		get_node("plata_player_l/plataforma_player_l3").rotation = speed
-
+# rotacion de player 2
 func _rotacion_player_2_1():
-	
-		if global_Var.plat_player_2 == 1:
-			get_node("plata_player_ll/plataforma_player_ll").rotation = normal
-		if global_Var.plat_player_2 == 2:
-			get_node("plata_player_ll/plataforma_player_ll").rotation = speed
+	if global_Var.plat_player_2 == 1:
+		get_node("plata_player_ll/plataforma_player_ll").rotation = normal
+	if global_Var.plat_player_2 == 2:
+		get_node("plata_player_ll/plataforma_player_ll").rotation = speed
 
+func _rotacion_player_2_2():
+	if global_Var.plat_player_2_2 == 1:
+		get_node("plata_player_ll/plataforma_player_ll2").rotation = normal
+	if global_Var.plat_player_2_2 == 2:
+		get_node("plata_player_ll/plataforma_player_ll2").rotation = speed
+
+func _rotacion_player_2_3():
+	if global_Var.plat_player_2_3 == 1:
+		get_node("plata_player_ll/plataforma_player_ll3").rotation = normal
+	if global_Var.plat_player_2_3 == 2:
+		get_node("plata_player_ll/plataforma_player_ll3").rotation = speed
 
 
 
