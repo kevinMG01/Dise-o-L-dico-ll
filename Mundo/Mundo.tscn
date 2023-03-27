@@ -28,7 +28,7 @@ position = Vector2( 349, 585 )
 position = Vector2( 328, 520 )
 
 [node name="boton_player_l" parent="." instance=ExtResource( 4 )]
-position = Vector2( 488, 520 )
+position = Vector2( 584, 520 )
 
 [node name="plata_player_l" type="Node2D" parent="."]
 position = Vector2( 120, 400 )
