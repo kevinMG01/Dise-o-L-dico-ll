@@ -27,7 +27,7 @@ scale = Vector2( 1.5, 1.6 )
 texture = ExtResource( 16 )
 
 [node name="FonTiempo" type="Sprite" parent="."]
-position = Vector2( 515, -26 )
+position = Vector2( 516, -26 )
 texture = ExtResource( 17 )
 
 [node name="suelo_solido" type="Node2D" parent="."]
@@ -97,7 +97,7 @@ position = Vector2( 792, -256 )
 [node name="plata_player_ll" type="Node2D" parent="."]
 
 [node name="plataforma_player_ll" parent="plata_player_ll" instance=ExtResource( 5 )]
-position = Vector2( 928, 403 )
+position = Vector2( 927, 411 )
 
 [node name="plataforma_player_ll2" parent="plata_player_ll" instance=ExtResource( 5 )]
 position = Vector2( 920, 280 )

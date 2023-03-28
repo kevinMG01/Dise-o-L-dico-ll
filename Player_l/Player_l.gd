@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 #movimiento
-var cantidad = 100
+var cantidad = 70
 var movimiento = Vector2()
 #gravedad
 var gravedad = 20.0

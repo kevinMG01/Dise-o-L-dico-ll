@@ -24,8 +24,6 @@ func _rotacion_player_1():
 	if global_Var.plat_player_1 == 1:
 		rotation = normal
 		sumar_p_1 = 0
-		
-		
 	if global_Var.plat_player_1 == 2:
 		rotation = speed
 
@@ -34,5 +32,7 @@ func _rotacion_player_1():
 
 func _on_Area2D_body_entered(body):
 	if body.get_name() == "Player_l":
+		body.queue_free()
+	if body.get_name() == "Player_ll":
 		body.queue_free()
 	pass # Replace with function body.

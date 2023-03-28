@@ -14,7 +14,7 @@ func _on_boton_player_l_body_entered(body):
 func _on_boton_player_l_body_exited(body):
 	if body.is_in_group("player_l"):
 		$AnimatedSprite.animation = "no_pre"
-		yield(get_tree().create_timer(3),"timeout")
+		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_1 = 1
 
 #			$Area2D/CollisionShape2D.disabled = true

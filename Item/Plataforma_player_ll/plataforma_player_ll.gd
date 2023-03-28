@@ -17,3 +17,5 @@ func _physics_process(delta):
 func _on_Area2D_body_entered(body):
 	if body.get_name() == "Player_ll":
 		body.queue_free()
+	if body.get_name() == "Player_l":
+		body.queue_free()

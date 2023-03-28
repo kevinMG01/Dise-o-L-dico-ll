@@ -13,6 +13,6 @@ func _on_bot_play_l_2_body_entered(body):
 func _on_bot_play_l_2_body_exited(body):
 	if body.is_in_group("player_l"):
 		$AnimatedSprite.animation = "no_pre"
-		yield(get_tree().create_timer(3),"timeout")
+		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_1_2 = 1
 	pass # Replace with function body.
