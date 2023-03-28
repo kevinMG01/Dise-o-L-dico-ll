@@ -7,15 +7,15 @@
 [node name="Menu" type="Node2D"]
 
 [node name="inicio" parent="." instance=ExtResource( 1 )]
-margin_left = 400.0
+margin_left = 410.0
 margin_top = 301.0
-margin_right = 578.0
+margin_right = 588.0
 margin_bottom = 363.0
 
 [node name="creditos" parent="." instance=ExtResource( 2 )]
-margin_left = 402.0
+margin_left = 405.0
 margin_top = 393.0
-margin_right = 590.0
+margin_right = 593.0
 margin_bottom = 453.0
 
 [node name="salir" parent="." instance=ExtResource( 3 )]
