@@ -12,6 +12,9 @@ var puntos_player_1 = 0
 var puntos_player_2 = 0
 
 var tiempo = 50
+
+var vida = 0
+
 func _physics_process(delta):
 	pass
 

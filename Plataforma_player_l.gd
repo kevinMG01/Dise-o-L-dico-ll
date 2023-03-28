@@ -32,7 +32,11 @@ func _rotacion_player_1():
 
 func _on_Area2D_body_entered(body):
 	if body.get_name() == "Player_l":
+		global_Var.vida += 1
 		body.queue_free()
+		
 	if body.get_name() == "Player_ll":
+		global_Var.vida += 1
 		body.queue_free()
+		
 	pass # Replace with function body.
