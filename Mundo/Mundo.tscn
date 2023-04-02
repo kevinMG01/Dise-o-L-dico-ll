@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Mundo/fondo 1.jpeg" type="Texture" id=16]
 [ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=17]
+[ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=18]
 
 [node name="Mundo" type="Node2D"]
 script = ExtResource( 7 )
@@ -148,5 +149,8 @@ position = Vector2( 99, 61 )
 
 [node name="estrella_negra2" parent="estrellas_negras" instance=ExtResource( 10 )]
 position = Vector2( 881, 219 )
+
+[node name="enemigo_1" parent="." instance=ExtResource( 18 )]
+position = Vector2( 325, 476 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
