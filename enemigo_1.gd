@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
 var movimiento = Vector2()
-var velocity = 150
-var cantidad = 100
+var velocity = 20
+#var cantidad = 5
 var distancia = 100
 var comensar = false
 
@@ -20,7 +20,14 @@ func _physics_process(delta):
 
 func move():
 	if comensar == true:
-		movimiento.x += velocity
-		pass
+		var cantidad = 5
+		if cantidad > 1:
+			movimiento.x += velocity
+			cantidad -= 1
+			
+		else:
+			movimiento.x -= velocity
+			cantidad += 1
+			pass
 	
 	pass
