@@ -17,12 +17,195 @@
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Mundo/fondo 1.jpeg" type="Texture" id=16]
 [ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=17]
-[ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Mundo/fondo 2.jpeg" type="Texture" id=19]
 
 [node name="Mundo" type="Node2D"]
 script = ExtResource( 7 )
 
+[node name="fondo_tip_tilemap" type="Node2D" parent="."]
+
+[node name="Fondo2" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 58, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo3" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 180, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo4" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 301, 61 )
+texture = ExtResource( 19 )
+
+[node name="Fondo5" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 423, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo6" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 544, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo7" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 666, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo8" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 788, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo9" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 910, 60 )
+texture = ExtResource( 19 )
+
+[node name="Fondo10" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 1032, 62 )
+texture = ExtResource( 19 )
+
+[node name="Fondo11" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 58, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo12" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 180, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo13" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 302, 183 )
+texture = ExtResource( 19 )
+
+[node name="Fondo14" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 423, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo15" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 545, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo16" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 666, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo17" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 788, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo18" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 910, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo19" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 1032, 182 )
+texture = ExtResource( 19 )
+
+[node name="Fondo20" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 58, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo21" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 180, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo22" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 302, 305 )
+texture = ExtResource( 19 )
+
+[node name="Fondo23" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 424, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo24" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 546, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo25" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 668, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo26" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 790, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo27" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 912, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo28" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 1034, 304 )
+texture = ExtResource( 19 )
+
+[node name="Fondo29" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 58, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo30" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 180, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo31" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 302, 427 )
+texture = ExtResource( 19 )
+
+[node name="Fondo32" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 424, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo33" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 546, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo34" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 668, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo35" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 790, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo36" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 912, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo37" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 1034, 426 )
+texture = ExtResource( 19 )
+
+[node name="Fondo38" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 58, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo39" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 180, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo40" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 302, 549 )
+texture = ExtResource( 19 )
+
+[node name="Fondo41" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 424, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo42" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 546, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo43" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 669, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo44" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 792, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo45" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 914, 548 )
+texture = ExtResource( 19 )
+
+[node name="Fondo46" type="Sprite" parent="fondo_tip_tilemap"]
+position = Vector2( 1036, 547 )
+texture = ExtResource( 19 )
+
 [node name="Fondo1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 516, 289 )
 scale = Vector2( 1.5, 1.6 )
 texture = ExtResource( 16 )
@@ -78,7 +261,7 @@ position = Vector2( 448, 339 )
 position = Vector2( 455, 155 )
 
 [node name="Player_l" parent="." instance=ExtResource( 1 )]
-position = Vector2( 936, 544 )
+position = Vector2( 937, 544 )
 
 [node name="Player_ll" parent="." instance=ExtResource( 3 )]
 position = Vector2( 48, 512 )
@@ -131,26 +314,23 @@ autostart = true
 [node name="estrellas_blancas" type="Node2D" parent="."]
 
 [node name="estrella_blanca" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 109, 351 )
+position = Vector2( 88, 336 )
 
 [node name="estrella_blanca3" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 915, 90 )
+position = Vector2( 941, 86 )
 
 [node name="estrella_blanca2" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 105, 244 )
+position = Vector2( 88, 215 )
 
 [node name="estrellas_negras" type="Node2D" parent="."]
 
 [node name="estrella_negra" parent="estrellas_negras" instance=ExtResource( 10 )]
-position = Vector2( 912, 352 )
+position = Vector2( 888, 344 )
 
 [node name="estrella_negra3" parent="estrellas_negras" instance=ExtResource( 10 )]
-position = Vector2( 99, 61 )
+position = Vector2( 150, 87 )
 
 [node name="estrella_negra2" parent="estrellas_negras" instance=ExtResource( 10 )]
-position = Vector2( 881, 219 )
-
-[node name="enemigo_1" parent="." instance=ExtResource( 18 )]
-position = Vector2( 325, 476 )
+position = Vector2( 886, 211 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
