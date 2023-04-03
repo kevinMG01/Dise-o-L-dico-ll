@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boton_negro_no-1.png-2df6cfd2591baa3c19a05f163d32f58c.stex"
+path="res://.import/boton blanco precionado.png-0fab9bc5388a59e23ebc45ebe5967b88.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/boton_player_ll/boton_negro_no-1.png"
-dest_files=[ "res://.import/boton_negro_no-1.png-2df6cfd2591baa3c19a05f163d32f58c.stex" ]
+source_file="res://Item/boton_player_l/boton blanco precionado.png"
+dest_files=[ "res://.import/boton blanco precionado.png-0fab9bc5388a59e23ebc45ebe5967b88.stex" ]
 
 [params]
 

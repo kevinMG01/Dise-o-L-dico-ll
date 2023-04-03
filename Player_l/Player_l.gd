@@ -44,10 +44,11 @@ func sonido():
 	if Input.is_action_pressed("ui_left"):
 		if is_on_floor():
 			$AudioStreamPlayer2D.playing = true
-	else:
-		$AudioStreamPlayer2D.playing = false
-			
-	pass
+	if Input.is_action_pressed("ui_right"):
+		if is_on_floor():
+			$AudioStreamPlayer2D.playing = true
+	
+	
 
 func jump():
 	if is_on_floor():
@@ -61,10 +62,4 @@ func jump():
 	#			pass
 			salto += 1
 			movimiento.y -= jump_speed
-	#	elif salto == 1:
-			#animacion de doble salto
-	#		movimiento.y -= jump_doble
-	#		salto +=1
-	#if !is_on_floor():
-	#	if movimiento.y < 1:
-	#		pass
+		

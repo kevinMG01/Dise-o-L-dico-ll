@@ -217,7 +217,7 @@ texture = ExtResource( 17 )
 [node name="suelo_solido" type="Node2D" parent="."]
 
 [node name="suelo" parent="suelo_solido" instance=ExtResource( 2 )]
-position = Vector2( 349, 585 )
+position = Vector2( 349, 578 )
 
 [node name="suelo4" parent="suelo_solido" instance=ExtResource( 2 )]
 position = Vector2( 335, -146 )
@@ -241,10 +241,10 @@ position = Vector2( 499, 192 )
 [node name="bot_play_1" type="Node2D" parent="."]
 
 [node name="boton_player_l" parent="bot_play_1" instance=ExtResource( 4 )]
-position = Vector2( 640, 544 )
+position = Vector2( 640, 535 )
 
 [node name="bot_play_l_2" parent="bot_play_1" instance=ExtResource( 12 )]
-position = Vector2( 544, 340 )
+position = Vector2( 546, 340 )
 
 [node name="bot_play_l_3" parent="bot_play_1" instance=ExtResource( 13 )]
 position = Vector2( 545, 156 )
@@ -252,7 +252,7 @@ position = Vector2( 545, 156 )
 [node name="bot_play_2" type="Node2D" parent="."]
 
 [node name="boton_player_ll" parent="bot_play_2" instance=ExtResource( 8 )]
-position = Vector2( 384, 544 )
+position = Vector2( 336, 534 )
 
 [node name="bot_player_1_22" parent="bot_play_2" instance=ExtResource( 14 )]
 position = Vector2( 448, 339 )
@@ -332,5 +332,9 @@ position = Vector2( 150, 87 )
 
 [node name="estrella_negra2" parent="estrellas_negras" instance=ExtResource( 10 )]
 position = Vector2( 886, 211 )
+
+[node name="Position2D" type="Position2D" parent="."]
+
+[node name="Timer" type="Timer" parent="Position2D"]
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
