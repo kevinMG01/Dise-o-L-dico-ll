@@ -25,17 +25,29 @@ func _ready():
 func _physics_process(delta):
 	move()
 	jump()
+	sonido()
 	movimiento.y = movimiento.y + gravedad
 	movimiento = move_and_slide(movimiento, Vector2(0, -1))
 	movimiento.x = lerp(movimiento.x,0,0.21)
 	pass
 
 func move():
+	
 #	movimiento.x = 0
 	if Input.is_action_pressed("ui_left"):
 		movimiento.x -= cantidad
+		
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += cantidad
+
+func sonido():
+	if Input.is_action_pressed("ui_left"):
+		if is_on_floor():
+			$AudioStreamPlayer2D.playing = true
+	else:
+		$AudioStreamPlayer2D.playing = false
+			
+	pass
 
 func jump():
 	if is_on_floor():
