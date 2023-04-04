@@ -265,21 +265,21 @@ position = Vector2( 120, 400 )
 position = Vector2( -19, 19 )
 
 [node name="plataforma_player_l2" parent="plata_player_l" instance=ExtResource( 6 )]
-position = Vector2( -16, -104 )
+position = Vector2( -20, -102 )
 
 [node name="plataforma_player_l3" parent="plata_player_l" instance=ExtResource( 6 )]
-position = Vector2( 792, -256 )
+position = Vector2( 790, -256 )
 
 [node name="plata_player_ll" type="Node2D" parent="."]
 
 [node name="plataforma_player_ll" parent="plata_player_ll" instance=ExtResource( 5 )]
-position = Vector2( 927, 411 )
+position = Vector2( 922, 411 )
 
 [node name="plataforma_player_ll2" parent="plata_player_ll" instance=ExtResource( 5 )]
-position = Vector2( 920, 280 )
+position = Vector2( 916, 280 )
 
 [node name="plataforma_player_ll3" parent="plata_player_ll" instance=ExtResource( 5 )]
-position = Vector2( 112, 128 )
+position = Vector2( 108, 128 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

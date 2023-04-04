@@ -58,7 +58,8 @@ func _physics_process(delta):
 		get_tree().change_scene("res://Mundo/Nivel_2/Nivel_2.tscn")
 	if global_Var.vida == 0:
 		get_tree().change_scene("res://Menu/Menu.tscn")
-		global_Var.vida = 0
+		global_Var.vida = 5
+		
 	
 	
 	
