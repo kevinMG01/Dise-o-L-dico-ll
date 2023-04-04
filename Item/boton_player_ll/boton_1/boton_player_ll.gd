@@ -19,9 +19,8 @@ func _on_boton_player_ll_body_exited(body):
 		$animacion_boton.animation = "no_pre"
 		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_2 = 1
-	if body.is_in_group("player_l"):
+	elif body.is_in_group("player_l"):
 		$animacion_boton.animation = "no_pre"
-		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_2 = 1
 #		self.queue_free()
 

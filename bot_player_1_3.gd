@@ -19,8 +19,7 @@ func _on_bot_player_1_3_body_exited(body):
 		$AnimatedSprite.animation = "no_pre"
 		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_2_3 = 1
-	if body.is_in_group("player_l"):
+	elif body.is_in_group("player_l"):
 		$AnimatedSprite.animation = "no_pre"
-		yield(get_tree().create_timer(5),"timeout")
 		global_Var.plat_player_2_3 = 1
 	pass # Replace with function body.
