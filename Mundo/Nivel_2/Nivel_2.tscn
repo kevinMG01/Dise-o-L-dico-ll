@@ -80,13 +80,13 @@ position = Vector2( 44, 328 )
 [node name="platafor_negro" type="Node2D" parent="."]
 
 [node name="plataforma_player_ll" parent="platafor_negro" instance=ExtResource( 4 )]
-position = Vector2( 232, 111 )
+position = Vector2( 232, 112 )
 
 [node name="plataforma_player_ll2" parent="platafor_negro" instance=ExtResource( 4 )]
-position = Vector2( 236, 242 )
+position = Vector2( 236, 243 )
 
 [node name="plataforma_player_ll3" parent="platafor_negro" instance=ExtResource( 4 )]
-position = Vector2( 812, 371 )
+position = Vector2( 812, 372 )
 
 [node name="Player_l" parent="." instance=ExtResource( 2 )]
 position = Vector2( 360, 611 )
