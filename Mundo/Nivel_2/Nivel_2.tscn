@@ -9,3 +9,5 @@ margin_right = 301.0
 margin_bottom = 236.0
 rect_scale = Vector2( 6, 6 )
 text = "Gracias por jugar"
+
+[node name="Node2D" type="Node2D" parent="."]
