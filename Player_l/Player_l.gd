@@ -14,8 +14,10 @@ var jump_speed = 620
 #max daltos
 var max_jump = 2
 var salto = 0
-var suelo = true
+var suelo = false
 
+
+var sonido = true
 
 
 func _ready():
@@ -25,7 +27,7 @@ func _ready():
 func _physics_process(delta):
 	move()
 	jump()
-	sonido()
+	sonidos()
 	movimiento.y = movimiento.y + gravedad
 	movimiento = move_and_slide(movimiento, Vector2(0, -1))
 	movimiento.x = lerp(movimiento.x,0,0.21)
@@ -36,12 +38,13 @@ func move():
 #	movimiento.x = 0
 	if Input.is_action_pressed("ui_left"):
 		movimiento.x -= cantidad
+		sonido = true
 		
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += cantidad
 
-func sonido():
-	if Input.is_action_pressed("ui_left"):
+func sonidos():
+	if sonido == true:
 		if is_on_floor():
 			$AudioStreamPlayer2D.playing = true
 	if Input.is_action_pressed("ui_right"):
