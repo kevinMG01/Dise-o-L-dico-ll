@@ -46,3 +46,6 @@ stream = ExtResource( 5 )
 volume_db = 1.0
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
