@@ -8,115 +8,133 @@
 position = Vector2( 59, 59 )
 
 [node name="fondo2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 59, 181 )
+position = Vector2( 59, 180 )
 
 [node name="fondo3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 59, 302 )
 
 [node name="fondo4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 59, 424 )
+position = Vector2( 59, 423 )
 
 [node name="fondo5" parent="." instance=ExtResource( 1 )]
 position = Vector2( 59, 545 )
 
 [node name="fondo6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 182, 545 )
+position = Vector2( 180, 545 )
 
 [node name="fondo7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 181, 424 )
+position = Vector2( 180, 423 )
 
 [node name="fondo8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 181, 302 )
+position = Vector2( 180, 302 )
 
 [node name="fondo9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 181, 181 )
+position = Vector2( 180, 180 )
 
 [node name="fondo10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 182, 59 )
+position = Vector2( 180, 59 )
 
 [node name="fondo11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 304, 59 )
+position = Vector2( 302, 59 )
 
 [node name="fondo12" parent="." instance=ExtResource( 1 )]
-position = Vector2( 303, 181 )
+position = Vector2( 302, 180 )
 
 [node name="fondo13" parent="." instance=ExtResource( 1 )]
-position = Vector2( 303, 303 )
+position = Vector2( 301, 302 )
 
 [node name="fondo14" parent="." instance=ExtResource( 1 )]
-position = Vector2( 303, 424 )
+position = Vector2( 301, 423 )
 
 [node name="fondo15" parent="." instance=ExtResource( 1 )]
-position = Vector2( 304, 546 )
+position = Vector2( 301, 545 )
 
 [node name="fondo16" parent="." instance=ExtResource( 1 )]
-position = Vector2( 426, 546 )
+position = Vector2( 422, 545 )
 
 [node name="fondo17" parent="." instance=ExtResource( 1 )]
-position = Vector2( 425, 425 )
+position = Vector2( 422, 423 )
 
 [node name="fondo18" parent="." instance=ExtResource( 1 )]
-position = Vector2( 425, 303 )
+position = Vector2( 423, 302 )
 
 [node name="fondo19" parent="." instance=ExtResource( 1 )]
-position = Vector2( 425, 181 )
+position = Vector2( 424, 180 )
 
 [node name="fondo20" parent="." instance=ExtResource( 1 )]
-position = Vector2( 425, 59 )
+position = Vector2( 424, 59 )
 
 [node name="fondo21" parent="." instance=ExtResource( 1 )]
-position = Vector2( 547, 59 )
+position = Vector2( 545, 59 )
 
 [node name="fondo22" parent="." instance=ExtResource( 1 )]
-position = Vector2( 547, 180 )
+position = Vector2( 545, 180 )
 
 [node name="fondo23" parent="." instance=ExtResource( 1 )]
-position = Vector2( 546, 302 )
+position = Vector2( 545, 302 )
 
 [node name="fondo24" parent="." instance=ExtResource( 1 )]
-position = Vector2( 547, 424 )
+position = Vector2( 544, 423 )
 
 [node name="fondo25" parent="." instance=ExtResource( 1 )]
-position = Vector2( 547, 546 )
+position = Vector2( 544, 545 )
 
 [node name="fondo26" parent="." instance=ExtResource( 1 )]
-position = Vector2( 669, 547 )
+position = Vector2( 666, 544 )
 
 [node name="fondo27" parent="." instance=ExtResource( 1 )]
-position = Vector2( 669, 425 )
+position = Vector2( 666, 423 )
 
 [node name="fondo28" parent="." instance=ExtResource( 1 )]
-position = Vector2( 668, 303 )
+position = Vector2( 666, 301 )
 
 [node name="fondo29" parent="." instance=ExtResource( 1 )]
-position = Vector2( 669, 181 )
+position = Vector2( 666, 180 )
 
 [node name="fondo30" parent="." instance=ExtResource( 1 )]
-position = Vector2( 669, 59 )
+position = Vector2( 666, 58 )
 
 [node name="fondo31" parent="." instance=ExtResource( 1 )]
-position = Vector2( 791, 59 )
+position = Vector2( 787, 59 )
 
 [node name="fondo32" parent="." instance=ExtResource( 1 )]
-position = Vector2( 791, 181 )
+position = Vector2( 787, 180 )
 
 [node name="fondo33" parent="." instance=ExtResource( 1 )]
-position = Vector2( 790, 303 )
+position = Vector2( 788, 302 )
 
 [node name="fondo34" parent="." instance=ExtResource( 1 )]
-position = Vector2( 791, 424 )
+position = Vector2( 788, 423 )
 
 [node name="fondo35" parent="." instance=ExtResource( 1 )]
-position = Vector2( 791, 546 )
+position = Vector2( 787, 545 )
 
 [node name="fondo36" parent="." instance=ExtResource( 1 )]
-position = Vector2( 912, 545 )
+position = Vector2( 909, 545 )
 
 [node name="fondo37" parent="." instance=ExtResource( 1 )]
-position = Vector2( 913, 424 )
+position = Vector2( 909, 423 )
 
 [node name="fondo38" parent="." instance=ExtResource( 1 )]
-position = Vector2( 912, 302 )
+position = Vector2( 909, 302 )
 
 [node name="fondo39" parent="." instance=ExtResource( 1 )]
-position = Vector2( 912, 180 )
+position = Vector2( 908, 180 )
+
+[node name="fondo40" parent="." instance=ExtResource( 1 )]
+position = Vector2( 908, 59 )
+
+[node name="fondo41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1029, 59 )
+
+[node name="fondo42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1029, 180 )
+
+[node name="fondo43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1030, 301 )
+
+[node name="fondo44" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1030, 422 )
+
+[node name="fondo45" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1030, 543 )
