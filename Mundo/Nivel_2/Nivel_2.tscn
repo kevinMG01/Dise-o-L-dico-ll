@@ -15,7 +15,7 @@
 script = ExtResource( 7 )
 
 [node name="Enemigo" parent="." instance=ExtResource( 10 )]
-position = Vector2( 415, 45 )
+position = Vector2( 394, 215 )
 
 [node name="suelo" type="Node2D" parent="."]
 

@@ -2,9 +2,10 @@ extends Area2D
 
 
 
-var invocar = preload("res://Enemigo_sin_colicion/lava/salpicadura/salpicadura.tscn")
+var invocar = preload("res://Enemigo_sin_colicion/lava/salpicadura/salpicadura_cuerpo.tscn")
 
-
+#res://Player_l/Player_l.tscn
+#res://Enemigo_sin_colicion/lava/salpicadura/salpicadura.tscn
 func _ready():
 	pass 
 
@@ -18,6 +19,7 @@ func _physics_process(delta):
 func invocar():
 		var newplayer = invocar.instance()
 		add_child(newplayer)
+		newplayer.global_position = get_tree().get_nodes_in_group("spawn_lava")[0].global_position
 
 
 
