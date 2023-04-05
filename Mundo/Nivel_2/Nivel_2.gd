@@ -67,7 +67,7 @@ func _rotacion_player_1_1():
 		get_node("platafor_Blancas/Plataforma_player_l").rotation = normal
 		sumar_p_1 = 0
 	if global_Var.plat_player_1 == 2:
-		get_node("platafor_Blancas/plataforma_player_l").rotation = speed
+		get_node("platafor_Blancas/Plataforma_player_l").rotation = speed
 	#	rotacion de plataforma
 	#if global_Var.plat_player_1 == 1:
 	#	get_node("plataforma_player_l").rotation = normal
