@@ -42,7 +42,6 @@ func move():
 		$Timer.start()
 		movimiento.x -= cantidad
 		
-		
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += cantidad
 

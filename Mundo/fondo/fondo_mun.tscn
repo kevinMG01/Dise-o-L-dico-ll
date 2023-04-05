@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Mundo/fondo/fondo_sprite/fondo.tscn" type="PackedScene" id=1]
+
+[node name="fondo_mun" type="Node2D"]
+
+[node name="fondo" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 59 )
+
+[node name="fondo2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 181 )
+
+[node name="fondo3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 302 )
+
+[node name="fondo4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 424 )
+
+[node name="fondo5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 545 )
+
+[node name="fondo6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 182, 545 )
+
+[node name="fondo7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 181, 424 )
+
+[node name="fondo8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 181, 302 )
+
+[node name="fondo9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 181, 181 )
+
+[node name="fondo10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 182, 59 )
+
+[node name="fondo11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 304, 59 )
+
+[node name="fondo12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 303, 181 )
+
+[node name="fondo13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 303, 303 )
+
+[node name="fondo14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 303, 424 )
+
+[node name="fondo15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 304, 546 )
+
+[node name="fondo16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 426, 546 )
+
+[node name="fondo17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 425, 425 )
+
+[node name="fondo18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 425, 303 )
+
+[node name="fondo19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 425, 181 )
+
+[node name="fondo20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 425, 59 )
+
+[node name="fondo21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 547, 59 )
+
+[node name="fondo22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 547, 180 )
+
+[node name="fondo23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 546, 302 )
+
+[node name="fondo24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 547, 424 )
+
+[node name="fondo25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 547, 546 )
+
+[node name="fondo26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669, 547 )
+
+[node name="fondo27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669, 425 )
+
+[node name="fondo28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 668, 303 )
+
+[node name="fondo29" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669, 181 )
+
+[node name="fondo30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669, 59 )
+
+[node name="fondo31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 791, 59 )
+
+[node name="fondo32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 791, 181 )
+
+[node name="fondo33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 790, 303 )
+
+[node name="fondo34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 791, 424 )
+
+[node name="fondo35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 791, 546 )
+
+[node name="fondo36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 912, 545 )
+
+[node name="fondo37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 913, 424 )
+
+[node name="fondo38" parent="." instance=ExtResource( 1 )]
+position = Vector2( 912, 302 )
+
+[node name="fondo39" parent="." instance=ExtResource( 1 )]
+position = Vector2( 912, 180 )

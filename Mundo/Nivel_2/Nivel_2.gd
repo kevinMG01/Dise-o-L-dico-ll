@@ -59,8 +59,6 @@ func _physics_process(delta):
 	if global_Var.vida == 0:
 		get_tree().change_scene("res://Menu/Menu.tscn")
 		global_Var.vida = 5
-		
-	
 	
 	
 #rotacion de player 1

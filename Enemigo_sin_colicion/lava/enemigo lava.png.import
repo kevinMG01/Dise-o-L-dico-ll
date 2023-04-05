@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fondo 2.jpeg-9e2c7e50c639a181b36d98f63e670cb0.stex"
+path="res://.import/enemigo lava.png-a3f6beab1240d63c4c12d55b1cf5f994.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mundo/fondo 2.jpeg"
-dest_files=[ "res://.import/fondo 2.jpeg-9e2c7e50c639a181b36d98f63e670cb0.stex" ]
+source_file="res://Enemigo_sin_colicion/lava/enemigo lava.png"
+dest_files=[ "res://.import/enemigo lava.png-a3f6beab1240d63c4c12d55b1cf5f994.stex" ]
 
 [params]
 

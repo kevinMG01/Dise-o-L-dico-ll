@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
+[ext_resource path="res://Mundo/vidas/vidas.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Item/boton_player_l/boton_1/boton_player_l.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=5]
@@ -15,7 +16,7 @@
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Mundo/fondo 1.jpeg" type="Texture" id=16]
 [ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=17]
-[ext_resource path="res://Mundo/fondo 2.jpeg" type="Texture" id=19]
+[ext_resource path="res://Mundo/fondo/fondo 2.jpeg" type="Texture" id=19]
 
 [node name="Mundo" type="Node2D" groups=["nivel_1"]]
 script = ExtResource( 7 )
@@ -330,5 +331,8 @@ position = Vector2( 952, 509 )
 
 [node name="Position_play_2" type="Position2D" parent="." groups=["spawn_2"]]
 position = Vector2( 92, 489 )
+
+[node name="vidas" parent="." instance=ExtResource( 1 )]
+position = Vector2( 38, 35 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
