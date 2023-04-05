@@ -2,7 +2,7 @@ extends Area2D
 
 
 
-var player_1 = preload("res://Player_l/Player_l.tscn")
+var invocar = preload("res://Enemigo_sin_colicion/lava/salpicadura/salpicadura.tscn")
 
 
 func _ready():
@@ -12,7 +12,14 @@ func _ready():
 func _physics_process(delta):
 
 
-	print($Timer) 
+	pass
+
+
+func invocar():
+		var newplayer = invocar.instance()
+		add_child(newplayer)
+
+
 
 
 
@@ -20,5 +27,11 @@ func _physics_process(delta):
 func _on_Enemigo_body_entered(body):
 	
 	pass # Replace with function body.
+	
 
 
+
+
+func _on_Timer_timeout():
+	invocar()
+	pass # Replace with function body.
