@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var movimiento = Vector2()
 var velocity = 20
-var cantidad = 500
+var cantidad = 200
 var distancia = 100
 var comensar = false
 var caminar = false
@@ -43,8 +43,17 @@ func move():
 		if caminar == true:
 			movimiento.x -= velocity
 			cantidad += 1
-			if cantidad == 500:
+			if cantidad == 200:
 				caminar = false
 			pass
 	
 	pass
+
+
+func _on_Area2D_body_entered(body):
+	if body.get_name() == "Player_l":
+		global_Var.vida -= 1
+		body.queue_free()
+	if body.get_name() == "Player_ll":
+		global_Var.vida -= 1
+		body.queue_free()

@@ -17,7 +17,7 @@ var salto = 0
 var suelo = false
 
 
-var sonido = true
+var sonido = false
 
 
 func _ready():
@@ -31,25 +31,23 @@ func _physics_process(delta):
 	#sonidos()
 	movimiento.y = movimiento.y + gravedad
 	movimiento = move_and_slide(movimiento, Vector2(0, -1))
-	movimiento.x = lerp(movimiento.x,0,0.21)
+	#movimiento.x = lerp(movimiento.x,0,0.21)
 	pass
 
 func move():
-	
-#	movimiento.x = 0
+	movimiento.x = 0
 	if Input.is_action_pressed("ui_left"):
-		
-		$Timer.start()
-		movimiento.x -= cantidad
+		movimiento.x = -cantidad
+		$AudioStreamPlayer2D.playing = true
 		
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += cantidad
 
 func sonidos():
-	if sonido == true:
+	if cantidad > cantidad:
 		if is_on_floor():
 			$AudioStreamPlayer2D.playing = true
-	if Input.is_action_pressed("ui_right"):
+	if movimiento.x == cantidad:
 		if is_on_floor():
 			$AudioStreamPlayer2D.playing = true
 	
@@ -72,5 +70,5 @@ func jump():
 
 func _on_Timer_timeout():
 	if is_on_floor():
-			$AudioStreamPlayer2D.playing = true
-
+		$AudioStreamPlayer2D.playing = true
+		pass
