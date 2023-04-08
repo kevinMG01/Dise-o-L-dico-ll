@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Menu/salir.png" type="Texture" id=1]
+[ext_resource path="res://Menu/sprite/Salir.png" type="Texture" id=1]
 [ext_resource path="res://Menu/salir.gd" type="Script" id=2]
 
 [node name="salir" type="TextureButton"]
-margin_right = 185.0
-margin_bottom = 56.0
+margin_right = 392.0
+margin_bottom = 68.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 93, 29 )
+position = Vector2( 196, 35 )
 texture = ExtResource( 1 )
 
 [connection signal="button_down" from="." to="." method="_on_salir_button_down"]

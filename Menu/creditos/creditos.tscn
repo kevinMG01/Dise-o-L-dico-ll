@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://creditos.gd" type="Script" id=1]
-[ext_resource path="res://Menu/creditos/creditos.png" type="Texture" id=2]
+[ext_resource path="res://Menu/sprite/Creditos.png" type="Texture" id=2]
 
 [node name="creditos" type="TextureButton"]
-margin_right = 187.0
-margin_bottom = 59.0
+margin_right = 399.0
+margin_bottom = 69.0
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 95, 33 )
+position = Vector2( 199, 35 )
 texture = ExtResource( 2 )
 
 [connection signal="button_down" from="." to="." method="_on_creditos_button_down"]

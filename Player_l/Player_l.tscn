@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player_l/Sprite/J1move.png" type="Texture" id=1]
 [ext_resource path="res://Player_l/Player_l.gd" type="Script" id=2]
 [ext_resource path="res://Player_l/Sprite/J1Jump.png" type="Texture" id=3]
 [ext_resource path="res://Player_l/Sprite/J1iddle.png" type="Texture" id=4]
 [ext_resource path="res://Player_l/pasos.wav" type="AudioStream" id=5]
+[ext_resource path="res://Player_l/al saltar 2.ogg" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -47,5 +48,8 @@ volume_db = 24.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
+
+[node name="salto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

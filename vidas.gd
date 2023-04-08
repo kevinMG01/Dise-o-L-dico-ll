@@ -23,5 +23,11 @@ func _physics_process(delta):
 		$vida_5.visible = false
 		
 		
-		pass
+	$vida_1.playing = true
+	$vida_2.playing = true
+	$vida_3.playing = true
+	$vida_4.playing = true
+	$vida_5.playing = true
+
+	
 	

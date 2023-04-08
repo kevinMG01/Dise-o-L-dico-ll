@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/al saltar 2.ogg-5d0bacb8f68348cbcccd4e407a97ed36.oggstr"
+
+[deps]
+
+source_file="res://Player_l/al saltar 2.ogg"
+dest_files=[ "res://.import/al saltar 2.ogg-5d0bacb8f68348cbcccd4e407a97ed36.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
