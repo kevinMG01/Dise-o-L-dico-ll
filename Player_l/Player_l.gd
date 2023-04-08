@@ -38,7 +38,7 @@ func move():
 	movimiento.x = 0
 	if Input.is_action_pressed("ui_left"):
 		movimiento.x = -cantidad
-		$AudioStreamPlayer2D.playing = true
+		
 		
 	if Input.is_action_pressed("ui_right"):
 		movimiento.x += cantidad
