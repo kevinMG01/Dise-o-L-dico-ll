@@ -14,6 +14,7 @@ var spawn_1 = true
 var spawn_2 = true
 
 
+
 var player_1 = preload("res://Player_l/Player_l.tscn")
 var player_2 = preload("res://Player_ll/Player_ll.tscn")
 
@@ -23,24 +24,8 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-	#spawn()
-	if spawn_1 == true:
-		var newplayer = player_1.instance()
-		add_child(newplayer)
-		newplayer.global_position = get_tree().get_nodes_in_group("spawn_1")[0].global_position
-		spawn_1 = false
-	if global_Var.cantidad == 0:
-		spawn_1 = true
-		global_Var.cantidad = 1
+	spawn()
 	
-	if spawn_2 == true:
-		var newplayer_2 = player_2.instance()
-		add_child(newplayer_2)
-		newplayer_2.global_position = get_tree().get_nodes_in_group("spawn_2")[0].global_position
-		spawn_2 = false
-	if global_Var.cantidad_j_2 == 0:
-		spawn_2 = true
-		global_Var.cantidad_j_2 = 1
 	_rotacion_player_1_1()
 	_rotacion_player_1_2()
 	_rotacion_player_1_3()
@@ -53,7 +38,7 @@ func _physics_process(delta):
 		get_tree().change_scene("res://Menu/Menu.tscn")
 		global_Var.tiempo = 50
 	if global_Var.puntos_player_1 == 6:
-		get_tree().change_scene("res://Mundo/Nivel_2/Nivel_2.tscn")
+		pass
 	if global_Var.vida == 0:
 		get_tree().change_scene("res://Menu/Menu.tscn")
 		global_Var.vida = 5
