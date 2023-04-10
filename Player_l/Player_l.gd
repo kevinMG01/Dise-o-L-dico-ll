@@ -47,25 +47,23 @@ func move():
 		movimiento.x += cantidad
 
 func sonidos():
-	#if cantidad > cantidad:
-	#	if is_on_floor():
-	#		$AudioStreamPlayer2D.playing = true
-	#if movimiento.x == cantidad:
-	#	if is_on_floor():
-	#		$AudioStreamPlayer2D.playing = true
+	if Input.is_action_pressed("ui_right"):
+		if is_on_floor():
+			$Pasos.play()
+	if Input.is_action_pressed("ui_left"):
+		if is_on_floor():
+			$Pasos.play()
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			$salto.play()
-	if is_on_floor():
+	elif is_on_floor():
 		$salto.playing = false
-			
-			
-	
+
 
 func jump():
 	if is_on_floor():
 		salto = 0
-			
+		masa = 1
 		if Input.is_action_just_pressed("ui_up") && salto < max_jump:
 			
 			suelo = false
@@ -73,6 +71,7 @@ func jump():
 	#			#animacion de salto
 	#			pass
 			salto += 1
+			masa = 0
 			movimiento.y -= jump_speed
 		
 

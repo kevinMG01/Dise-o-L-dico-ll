@@ -29,6 +29,7 @@ func _ready():
 func _physics_process(delta):
 	move()
 	jump()
+	sonidos()
 	movimientos.y = movimientos.y + gravedad
 	movimientos = move_and_slide(movimientos, Vector2(0, -1))
 	movimientos.x = lerp(movimientos.x,0,0.21)
@@ -60,3 +61,16 @@ func jump():
 	if !is_on_floor():
 		if movimientos.y < 1:
 			pass
+
+func sonidos():
+	if Input.is_action_pressed("a"):
+		if is_on_floor():
+			$Pasos.play()
+	if Input.is_action_pressed("d"):
+		if is_on_floor():
+			$Pasos.play()
+	if is_on_floor():
+		if Input.is_action_just_pressed("w"):
+			$salto.play()
+	elif is_on_floor():
+		$salto.playing = false

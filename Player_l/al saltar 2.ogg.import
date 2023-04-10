@@ -11,5 +11,5 @@ dest_files=[ "res://.import/al saltar 2.ogg-5d0bacb8f68348cbcccd4e407a97ed36.ogg
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
