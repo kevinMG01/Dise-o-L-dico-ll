@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=3]
+
+[node name="Nivel_3" type="Node2D"]
+
+[node name="fondo" type="Node" parent="."]
+
+[node name="suelo_piso" type="Node" parent="."]
+
+[node name="suelo" parent="suelo_piso" instance=ExtResource( 1 )]
+position = Vector2( 344, 631 )
+
+[node name="suelo2" parent="suelo_piso" instance=ExtResource( 1 )]
+position = Vector2( 331, -32 )
+
+[node name="suelo3" parent="suelo_piso" instance=ExtResource( 1 )]
+position = Vector2( -74, 299 )
+scale = Vector2( 0.1, 12 )
+
+[node name="suelo4" parent="suelo_piso" instance=ExtResource( 1 )]
+position = Vector2( 1063, 299 )
+scale = Vector2( 0.1, 12 )
+
+[node name="suelo_coli" type="Node" parent="suelo_piso"]
+
+[node name="suelo" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 121, 512 )
+scale = Vector2( 0.4, 0.7 )
+
+[node name="suelo2" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 119, 390 )
+scale = Vector2( 0.4, 0.7 )
+
+[node name="suelo3" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 5, 267 )
+scale = Vector2( 0.3, 0.7 )
+
+[node name="suelo4" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 93, 145 )
+scale = Vector2( 0.55, 0.7 )
+
+[node name="suelo5" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 134, 21 )
+scale = Vector2( 0.45, 0.7 )
+
+[node name="suelo6" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 848, 513 )
+scale = Vector2( 0.4, 0.7 )
+
+[node name="suelo7" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 537, 577 )
+scale = Vector2( 0.1, 1 )
+
+[node name="suelo8" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 695, 295 )
+scale = Vector2( 0.14, 1 )
+
+[node name="suelo9" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 815, 147 )
+scale = Vector2( 0.3, 0.7 )
+
+[node name="suelo10" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 941, 383 )
+scale = Vector2( 0.2, 0.7 )
+
+[node name="suelo11" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 989, 21 )
+scale = Vector2( 0.2, 0.7 )
+
+[node name="suelo12" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
+position = Vector2( 641, 20 )
+scale = Vector2( 0.2, 0.7 )
+
+[node name="Player_l" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 221 )
+
+[node name="plat_play_1" type="Node" parent="."]
+
+[node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 3 )]
+position = Vector2( 323, 494 )
+
+[node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 3 )]
+position = Vector2( 135, 248 )

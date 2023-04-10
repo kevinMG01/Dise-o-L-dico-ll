@@ -19,13 +19,13 @@ var player_1 = preload("res://Player_l/Player_l.tscn")
 var player_2 = preload("res://Player_ll/Player_ll.tscn")
 
 func _process(delta):
-
-	
+	#global_Var.puntos_player_1 = 6
 	pass
 
 func _physics_process(delta):
-	spawn()
 	
+	spawn()
+	niveles()
 	_rotacion_player_1_1()
 	_rotacion_player_1_2()
 	_rotacion_player_1_3()
@@ -33,15 +33,6 @@ func _physics_process(delta):
 	_rotacion_player_2_1()
 	_rotacion_player_2_2()
 	_rotacion_player_2_3()
-	
-	if global_Var.tiempo <= 0:
-		get_tree().change_scene("res://Menu/Menu.tscn")
-		global_Var.tiempo = 50
-	if global_Var.puntos_player_1 == 6:
-		pass
-	if global_Var.vida == 0:
-		get_tree().change_scene("res://Menu/Menu.tscn")
-		global_Var.vida = 5
 	
 	
 #rotacion de player 1
@@ -111,3 +102,24 @@ func spawn():
 	if global_Var.cantidad_j_2 == 0:
 		spawn_2 = true
 		global_Var.cantidad_j_2 = 1
+func niveles():
+	if global_Var.tiempo <= 0:
+		get_tree().change_scene("res://Menu/Menu.tscn")
+		global_Var.tiempo = 50
+		global_Var.puntos_player_1 = 0
+		global_Var.vida = 5
+	if global_Var.puntos_player_1 == 9:
+		get_tree().change_scene("res://Nivel_3/Nivel_3.tscn")
+		
+	if global_Var.vida == 0:
+		global_Var.puntos_player_1 = 0
+		get_tree().change_scene("res://Menu/Menu.tscn")
+		global_Var.vida = 5
+
+
+
+
+func _on_Timer_timeout():
+	global_Var.tiempo -= 1
+	global_Var.actualizar_tiempo()
+	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/boton_player_ll/boton_1/boton_player_ll.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Item/boton_player_l/boton_3/bot_play_l_3.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Nivel_2/Nivel_2.gd" type="Script" id=15]
+[ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=16]
 
 [node name="Nivel_2" type="Node2D"]
 script = ExtResource( 15 )
@@ -23,10 +24,34 @@ script = ExtResource( 15 )
 
 [node name="fondo_mun" parent="fondo" instance=ExtResource( 11 )]
 
+[node name="FonTiempo" type="Sprite" parent="."]
+position = Vector2( 518, -36 )
+texture = ExtResource( 16 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="tiempo" type="Label" parent="CanvasLayer" groups=["tiempo"]]
+margin_left = 574.0
+margin_top = 2.0
+margin_right = 614.0
+margin_bottom = 16.0
+rect_scale = Vector2( 3, 4 )
+
+[node name="nombre_tiempo" type="Label" parent="CanvasLayer"]
+margin_left = 383.0
+margin_top = 4.0
+margin_right = 431.0
+margin_bottom = 18.0
+rect_scale = Vector2( 3, 3 )
+text = "Tiempo"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [node name="suelo" type="Node2D" parent="."]
 
 [node name="suelo" parent="suelo" instance=ExtResource( 9 )]
-position = Vector2( 361, 630 )
+position = Vector2( 341, 629 )
 
 [node name="suelo2" parent="suelo" instance=ExtResource( 9 )]
 position = Vector2( 343, -33 )
@@ -40,17 +65,17 @@ position = Vector2( 1062, 298 )
 scale = Vector2( 0.1, 10 )
 
 [node name="vidas" parent="." instance=ExtResource( 12 )]
-position = Vector2( 76, 26 )
+position = Vector2( 100, 26 )
 
 [node name="platafor_soli" type="Node2D" parent="."]
 
 [node name="suelo" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 103, 127 )
-scale = Vector2( 0.3, 0.5 )
+scale = Vector2( 0.3, 0.55 )
 
 [node name="suelo4" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 96, 384 )
-scale = Vector2( 0.3, 0.5 )
+scale = Vector2( 0.3, 0.55 )
 
 [node name="suelo7" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 465, 562 )
@@ -58,19 +83,19 @@ scale = Vector2( 0.1, 2 )
 
 [node name="suelo2" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 672, 131 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.5, 0.55 )
 
 [node name="suelo3" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 214, 258 )
-scale = Vector2( 0.6, 0.5 )
+scale = Vector2( 0.6, 0.55 )
 
 [node name="suelo5" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 722, 387 )
-scale = Vector2( 0.6, 0.5 )
+scale = Vector2( 0.6, 0.55 )
 
 [node name="suelo6" parent="platafor_soli" instance=ExtResource( 9 )]
 position = Vector2( 379, 499 )
-scale = Vector2( 0.6, 0.5 )
+scale = Vector2( 0.6, 0.55 )
 
 [node name="estrellas_Negras" type="Node2D" parent="."]
 
@@ -100,21 +125,21 @@ position = Vector2( 44, 328 )
 position = Vector2( 243, 243 )
 
 [node name="plataforma_player_ll2" parent="platafor_negro" instance=ExtResource( 6 )]
-position = Vector2( 810, 372 )
+position = Vector2( 810, 371 )
 
 [node name="plataforma_player_ll3" parent="platafor_negro" instance=ExtResource( 6 )]
-position = Vector2( 236, 112 )
+position = Vector2( 236, 111 )
 
 [node name="platafor_Blancas" type="Node2D" parent="."]
 
 [node name="Plataforma_player_l" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 720, 499 )
+position = Vector2( 720, 483 )
 
 [node name="Plataforma_player_l2" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 217, 383 )
+position = Vector2( 215, 368 )
 
 [node name="Plataforma_player_l3" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 847, 130 )
+position = Vector2( 847, 115 )
 
 [node name="bot_play_1" type="Node2D" parent="."]
 
@@ -148,7 +173,9 @@ position = Vector2( 277, 452 )
 position = Vector2( 331, 214 )
 
 [node name="Position_p_1" type="Position2D" parent="." groups=["spawn_1"]]
-position = Vector2( 596, 546 )
+position = Vector2( 582, 552 )
 
 [node name="Position2_p_2" type="Position2D" parent="." groups=["spawn_2"]]
 position = Vector2( 348, 550 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

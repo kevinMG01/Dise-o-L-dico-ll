@@ -101,9 +101,9 @@ position = Vector2( 108, 128 )
 [node name="tiempo" type="Label" parent="CanvasLayer" groups=["tiempo"]]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 61.5
+margin_left = 48.5
 margin_top = 2.0
-margin_right = 104.5
+margin_right = 91.5
 margin_bottom = 17.0
 rect_scale = Vector2( 3, 4 )
 
@@ -121,13 +121,13 @@ autostart = true
 [node name="estrellas_blancas" type="Node2D" parent="."]
 
 [node name="estrella_blanca" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 88, 336 )
+position = Vector2( 93, 347 )
 
 [node name="estrella_blanca3" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 941, 86 )
+position = Vector2( 935, 90 )
 
 [node name="estrella_blanca2" parent="estrellas_blancas" instance=ExtResource( 9 )]
-position = Vector2( 88, 215 )
+position = Vector2( 88, 220 )
 
 [node name="estrellas_negras" type="Node2D" parent="."]
 

@@ -29,17 +29,17 @@ animations = [ {
 extents = Vector2( 14.5, 22 )
 
 [node name="Player_l" type="KinematicBody2D" groups=["player_l"]]
-position = Vector2( 260, 151 )
+position = Vector2( 0, 1 )
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 20, -48 )
+position = Vector2( 1, -2 )
 scale = Vector2( 0.05, 0.05 )
 frames = SubResource( 1 )
 animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 19.5, -46 )
+position = Vector2( 1, 1 )
 shape = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]
