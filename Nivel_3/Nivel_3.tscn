@@ -61,7 +61,7 @@ position = Vector2( 668, 295 )
 scale = Vector2( 0.14, 1 )
 
 [node name="suelo13" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
-position = Vector2( 850, 93 )
+position = Vector2( 853, 93 )
 scale = Vector2( 0.07, 1 )
 
 [node name="suelo9" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
@@ -78,7 +78,7 @@ scale = Vector2( 0.1, 0.7 )
 
 [node name="suelo12" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
 position = Vector2( 685, 20 )
-scale = Vector2( 0.15, 0.7 )
+scale = Vector2( 0.13, 0.7 )
 
 [node name="plat_play_1" type="Node" parent="."]
 
