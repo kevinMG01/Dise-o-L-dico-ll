@@ -74,9 +74,6 @@ scale = Vector2( 0.2, 0.7 )
 position = Vector2( 641, 20 )
 scale = Vector2( 0.2, 0.7 )
 
-[node name="Player_l" parent="." instance=ExtResource( 2 )]
-position = Vector2( 279, 221 )
-
 [node name="plat_play_1" type="Node" parent="."]
 
 [node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 3 )]
@@ -84,3 +81,6 @@ position = Vector2( 323, 494 )
 
 [node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 3 )]
 position = Vector2( 135, 248 )
+
+[node name="Player_l" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 221 )
