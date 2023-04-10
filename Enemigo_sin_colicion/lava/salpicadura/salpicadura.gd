@@ -12,18 +12,22 @@ var jump_speed = 40
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	suelo = true
+	#suelo = true
 	pass # Replace with function body.
 	
 
 func _physics_process(delta):
 	movimiento.y = movimiento.y + gravity
 	
-	
-	if suelo == true: #Input.is_action_just_pressed("ui_up") 
-		salto += 1
-		movimiento.y -= jump_speed
-	if salto == 1:
-		suelo = false
+
+
+
+
+#	func _salto_salir():
+		#if suelo == true: #Input.is_action_just_pressed("ui_up") 
+	#		salto += 1
+	#		movimiento.y -= jump_speed
+	#if 	salto == 1:
+	#		suelo = false
 	
 
