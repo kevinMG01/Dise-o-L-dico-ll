@@ -5,7 +5,7 @@
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Enemigo_sin_colicion/Enemigo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemigo_sin_colicion/lava/Enemigo.tscn" type="PackedScene" id=6]
 
 [node name="Nivel_3" type="Node2D"]
 
@@ -54,8 +54,8 @@ position = Vector2( 848, 513 )
 scale = Vector2( 0.4, 0.7 )
 
 [node name="suelo7" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
-position = Vector2( 537, 577 )
-scale = Vector2( 0.1, 1 )
+position = Vector2( 546, 563 )
+scale = Vector2( 0.1, 1.3 )
 
 [node name="suelo8" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
 position = Vector2( 668, 295 )
@@ -122,7 +122,7 @@ position = Vector2( 94, 564 )
 [node name="enemigo_Lava" type="Node" parent="Enemigos"]
 
 [node name="Enemigo" parent="Enemigos/enemigo_Lava" instance=ExtResource( 6 )]
-position = Vector2( 521, 417 )
+position = Vector2( 695, 339 )
 
 [node name="Player_l" parent="." instance=ExtResource( 2 )]
 position = Vector2( 279, 283 )

@@ -17,7 +17,7 @@ func _ready():
 	
 
 func _physics_process(delta):
-	movimiento.y = movimiento.y + gravity
+	#movimiento.y = movimiento.y + gravity
 	
 
 
@@ -29,5 +29,5 @@ func _physics_process(delta):
 	#		movimiento.y -= jump_speed
 	#if 	salto == 1:
 	#		suelo = false
-	
+	pass
 
