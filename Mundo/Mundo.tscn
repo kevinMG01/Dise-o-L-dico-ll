@@ -123,6 +123,7 @@ text = "tiempo"
 autostart = true
 
 [node name="estrellas_blancas" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="estrella_blanca" parent="estrellas_blancas" instance=ExtResource( 14 )]
 position = Vector2( 93, 347 )
@@ -134,6 +135,7 @@ position = Vector2( 935, 90 )
 position = Vector2( 88, 220 )
 
 [node name="estrellas_negras" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="estrella_negra" parent="estrellas_negras" instance=ExtResource( 15 )]
 position = Vector2( 888, 344 )
