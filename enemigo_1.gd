@@ -37,7 +37,7 @@ func move():
 		if caminar == false:
 			movimiento.x += velocity
 			cantidad -= 1
-			print(cantidad)
+			
 			if cantidad == 0:
 				caminar = true
 		if caminar == true:

@@ -12,7 +12,6 @@
 [node name="fondo" type="Node" parent="."]
 
 [node name="suelo_piso" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="suelo" parent="suelo_piso" instance=ExtResource( 1 )]
 position = Vector2( 344, 631 )
@@ -83,7 +82,6 @@ position = Vector2( 685, 20 )
 scale = Vector2( 0.13, 0.7 )
 
 [node name="plat_play_1" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 2 )]
 position = Vector2( 323, 494 )
@@ -95,7 +93,6 @@ position = Vector2( 135, 248 )
 position = Vector2( 981, 128 )
 
 [node name="plat_play_2" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="plataforma_player_ll" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 324, 370 )
