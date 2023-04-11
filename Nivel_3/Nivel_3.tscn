@@ -1,17 +1,18 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Enemigo_sin_colicion/lava/Enemigo.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemigo_sin_colicion/lava/Enemigo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=6]
 
 [node name="Nivel_3" type="Node2D"]
 
 [node name="fondo" type="Node" parent="."]
 
 [node name="suelo_piso" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="suelo" parent="suelo_piso" instance=ExtResource( 1 )]
 position = Vector2( 344, 631 )
@@ -82,34 +83,37 @@ position = Vector2( 685, 20 )
 scale = Vector2( 0.13, 0.7 )
 
 [node name="plat_play_1" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 3 )]
+[node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 2 )]
 position = Vector2( 323, 494 )
 
-[node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 3 )]
+[node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 2 )]
 position = Vector2( 135, 248 )
 
-[node name="Plataforma_player_l3" parent="plat_play_1" instance=ExtResource( 3 )]
+[node name="Plataforma_player_l3" parent="plat_play_1" instance=ExtResource( 2 )]
 position = Vector2( 981, 128 )
 
 [node name="plat_play_2" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="plataforma_player_ll" parent="plat_play_2" instance=ExtResource( 5 )]
+[node name="plataforma_player_ll" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 324, 370 )
 
-[node name="plataforma_player_ll2" parent="plat_play_2" instance=ExtResource( 5 )]
+[node name="plataforma_player_ll2" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 79, 370 )
 
-[node name="plataforma_player_ll3" parent="plat_play_2" instance=ExtResource( 5 )]
+[node name="plataforma_player_ll3" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 393, 126 )
 
-[node name="plataforma_player_ll4" parent="plat_play_2" instance=ExtResource( 5 )]
+[node name="plataforma_player_ll4" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 97, 126 )
 
-[node name="plataforma_player_ll5" parent="plat_play_2" instance=ExtResource( 5 )]
+[node name="plataforma_player_ll5" parent="plat_play_2" instance=ExtResource( 3 )]
 position = Vector2( 891, 496 )
 
 [node name="Enemigos" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="enemigo_rotante" type="Node" parent="Enemigos"]
 
@@ -121,8 +125,8 @@ position = Vector2( 94, 564 )
 
 [node name="enemigo_Lava" type="Node" parent="Enemigos"]
 
-[node name="Enemigo" parent="Enemigos/enemigo_Lava" instance=ExtResource( 6 )]
+[node name="Enemigo" parent="Enemigos/enemigo_Lava" instance=ExtResource( 5 )]
 position = Vector2( 695, 339 )
 
-[node name="Player_l" parent="." instance=ExtResource( 2 )]
+[node name="Player_l" parent="." instance=ExtResource( 6 )]
 position = Vector2( 279, 283 )
