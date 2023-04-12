@@ -42,16 +42,7 @@ func _rotacion_player_1_1():
 		sumar_p_1 = 0
 	if global_Var.plat_player_1 == 2:
 		get_node("platafor_Blancas/Plataforma_player_l").rotation = speed
-	#	rotacion de plataforma
-	#if global_Var.plat_player_1 == 1:
-	#	get_node("plataforma_player_l").rotation = normal
-	#	sumar_p_1 = 0
-	#if global_Var.plat_player_1 == 2:
-	#	get_node("plataforma_player_l").rotate(speed)
-	#	sumar_p_1 += 0.03
-	#	if sumar_p_1 >= 9.10:
-	#		get_node("plataforma_player_l").rotation = rot_fija_1
-	
+
 func _rotacion_player_1_2():
 	if global_Var.plat_player_1_2 == 1:
 		get_node("platafor_Blancas/Plataforma_player_l2").rotation = normal
@@ -84,6 +75,7 @@ func _rotacion_player_2_3():
 	if global_Var.plat_player_2_3 == 2:
 		get_node("platafor_negro/plataforma_player_ll3").rotation = speed
 
+
 func spawn():
 	if spawn_1 == true:
 		var newplayer = player_1.instance()
@@ -102,6 +94,8 @@ func spawn():
 	if global_Var.cantidad_j_2 == 0:
 		spawn_2 = true
 		global_Var.cantidad_j_2 = 1
+
+
 func niveles():
 	if global_Var.tiempo <= 0:
 		get_tree().change_scene("res://Menu/Menu.tscn")
@@ -115,7 +109,6 @@ func niveles():
 		global_Var.puntos_player_1 = 0
 		get_tree().change_scene("res://Menu/Menu.tscn")
 		global_Var.vida = 5
-
 
 
 
