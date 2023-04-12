@@ -39,8 +39,10 @@ func move():
 #	movimiento.x = 0
 	if Input.is_action_pressed("a"):
 		movimientos.x -= cantidad
+		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("d"):
 		movimientos.x += cantidad
+		$AnimatedSprite.flip_h = false
 
 func jump():
 	if is_on_floor():
@@ -54,6 +56,7 @@ func jump():
 				pass
 			salto += 1
 			movimientos.y -= jump_speed
+			
 		elif salto == 1:
 			#animacion de doble salto
 			movimientos.y -= jump_doble
