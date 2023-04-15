@@ -32,8 +32,6 @@ func _on_Enemigo_body_entered(body):
 	
 
 
-
-
 func _on_Timer_timeout():
 	_invocar()
 	pass # Replace with function body.
