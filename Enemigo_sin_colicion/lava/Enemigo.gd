@@ -19,7 +19,7 @@ func _physics_process(delta):
 func _invocar():
 		var newplayer = invocar.instance()
 		add_child(newplayer)
-		newplayer.global_position = get_tree().get_nodes_in_group("spawn_lava")[0].global_position
+		#newplayer.global_position = get_tree().get_nodes_in_group("spawn_lava")[0].global_position
 
 
 
