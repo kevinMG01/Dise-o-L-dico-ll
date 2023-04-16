@@ -52,9 +52,9 @@ func _rotacion_player_1_2():
 		get_node("plat_play_1/Plataforma_player_l2").rotation = speed
 
 func _rotacion_player_1_4():
-	if global_Var.plat_player_1_2 == 1:
+	if global_Var.plat_player_1 == 1:
 		get_node("plat_play_1/Plataforma_player_l4").rotation = speed
-	if global_Var.plat_player_1_2 == 2:
+	if global_Var.plat_player_1 == 2:
 		get_node("plat_play_1/Plataforma_player_l4").rotation = normal
 
 func _rotacion_player_1_3():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=2]
@@ -12,9 +12,16 @@
 [ext_resource path="res://Item/boton_player_l/boton_1/boton_player_l.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Item/boton_player_l/boton_2/bot_play_l_2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Mundo/vidas/vidas.tscn" type="PackedScene" id=13]
 
 [node name="Nivel_3" type="Node2D"]
 script = ExtResource( 7 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="vidas" parent="." instance=ExtResource( 13 )]
+position = Vector2( 247, 188 )
 
 [node name="fondo" type="Node" parent="."]
 
