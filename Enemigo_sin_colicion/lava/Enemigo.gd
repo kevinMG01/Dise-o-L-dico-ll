@@ -11,7 +11,7 @@ func _ready():
 
 
 func _physics_process(delta):
-	
+	$AnimatedSprite.playing = true
 
 	pass
 

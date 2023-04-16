@@ -1,9 +1,12 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Mundo/suelo/fon_b.png" type="Texture" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Enemigo_sin_colicion/lava/salpicadura/salpicadura_cuerpo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemigo_sin_colicion/lava/enemigo lava.png" type="Texture" id=4]
+[ext_resource path="res://Nivel_4/Nivel_4.gd" type="Script" id=5]
+[ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9, 312.5 )
@@ -18,6 +21,78 @@ extents = Vector2( 531.75, 10 )
 extents = Vector2( 28.5, 332 )
 
 [node name="Nivel_4" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="lava_img" type="Node2D" parent="."]
+
+[node name="EnemigoLava" type="Sprite" parent="lava_img"]
+position = Vector2( 56, -11 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava2" type="Sprite" parent="lava_img"]
+position = Vector2( 142, -9 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava3" type="Sprite" parent="lava_img"]
+position = Vector2( 243, -10 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava4" type="Sprite" parent="lava_img"]
+position = Vector2( 310, -10 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava5" type="Sprite" parent="lava_img"]
+position = Vector2( 409, -9 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava6" type="Sprite" parent="lava_img"]
+position = Vector2( 622, -11 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava7" type="Sprite" parent="lava_img"]
+position = Vector2( 728, -12 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava8" type="Sprite" parent="lava_img"]
+position = Vector2( 830, -12 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava9" type="Sprite" parent="lava_img"]
+position = Vector2( 895, -12 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+
+[node name="EnemigoLava10" type="Sprite" parent="lava_img"]
+position = Vector2( 975, -12 )
+scale = Vector2( 2, 1 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="enemigos" type="Node2D" parent="."]
+
+[node name="p_1" type="Node2D" parent="enemigos"]
+
+[node name="Plataforma_player_l" parent="enemigos/p_1" instance=ExtResource( 6 )]
+position = Vector2( 603, 208 )
+
+[node name="Plataforma_player_l2" parent="enemigos/p_1" instance=ExtResource( 6 )]
+position = Vector2( 943, 400 )
+
+[node name="p_2" type="Node2D" parent="enemigos"]
+
+[node name="plataforma_player_ll" parent="enemigos/p_2" instance=ExtResource( 7 )]
+position = Vector2( 420, 211 )
+
+[node name="plataforma_player_ll2" parent="enemigos/p_2" instance=ExtResource( 7 )]
+position = Vector2( 80, 411 )
 
 [node name="suelo_colision" type="Node2D" parent="."]
 
@@ -52,19 +127,19 @@ position = Vector2( 477, 293 )
 scale = Vector2( 0.05, 11 )
 
 [node name="suelo2" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 427, 150 )
+position = Vector2( 427, 190 )
 scale = Vector2( 0.5, 0.7 )
 
 [node name="suelo3" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 32, 183 )
+position = Vector2( 32, 251 )
 scale = Vector2( 0.1, 0.7 )
 
 [node name="suelo4" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 51, 347 )
+position = Vector2( 51, 381 )
 scale = Vector2( 0.15, 1 )
 
 [node name="suelo5" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 276, 350 )
+position = Vector2( 276, 377 )
 scale = Vector2( 0.1, 1 )
 
 [node name="suelo6" parent="Suelo_plataformas" instance=ExtResource( 2 )]
@@ -72,11 +147,11 @@ position = Vector2( 50, 573 )
 scale = Vector2( 0.15, 1 )
 
 [node name="suelo7" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 424, 489 )
+position = Vector2( 424, 511 )
 scale = Vector2( 0.5, 0.7 )
 
 [node name="suelo8" parent="Suelo_plataformas" instance=ExtResource( 2 )]
-position = Vector2( 486, 348 )
+position = Vector2( 486, 373 )
 scale = Vector2( 0.15, 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Suelo_plataformas"]
@@ -93,15 +168,15 @@ shape = SubResource( 4 )
 [node name="derecha" type="Node2D" parent="Suelo_plataformas"]
 
 [node name="suelo" parent="Suelo_plataformas/derecha" instance=ExtResource( 2 )]
-position = Vector2( 956, 155 )
+position = Vector2( 956, 252 )
 scale = Vector2( 0.1, 0.7 )
 
 [node name="suelo2" parent="Suelo_plataformas/derecha" instance=ExtResource( 2 )]
-position = Vector2( 920, 349 )
+position = Vector2( 920, 370 )
 scale = Vector2( 0.15, 1 )
 
 [node name="suelo3" parent="Suelo_plataformas/derecha" instance=ExtResource( 2 )]
-position = Vector2( 709, 348 )
+position = Vector2( 709, 373 )
 scale = Vector2( 0.1, 1 )
 
 [node name="suelo4" parent="Suelo_plataformas/derecha" instance=ExtResource( 2 )]
@@ -111,7 +186,27 @@ scale = Vector2( 0.15, 1 )
 [node name="Player_l" parent="." instance=ExtResource( 3 )]
 position = Vector2( 427, 563 )
 
-[node name="enemigos" type="Node2D" parent="."]
+[node name="gotas_lava" type="Node2D" parent="."]
 
-[node name="salpicadura_cuerpo" parent="." instance=ExtResource( 4 )]
-position = Vector2( 423, 54 )
+[node name="1" type="Position2D" parent="gotas_lava" groups=["spawn_gota_1"]]
+position = Vector2( 72, 2 )
+
+[node name="1" type="Timer" parent="gotas_lava/1"]
+wait_time = 7.0
+autostart = true
+
+[node name="2" type="Position2D" parent="gotas_lava" groups=["spawn_gota_2"]]
+position = Vector2( 360, 0 )
+
+[node name="2" type="Timer" parent="gotas_lava/2"]
+wait_time = 12.0
+autostart = true
+
+[node name="3" type="Position2D" parent="gotas_lava" groups=["spawn_gota_3"]]
+position = Vector2( 656, 0 )
+
+[node name="4" type="Position2D" parent="gotas_lava" groups=["spawn_gota_4"]]
+position = Vector2( 960, 0 )
+
+[connection signal="timeout" from="gotas_lava/1/1" to="." method="_on_1_timeout"]
+[connection signal="timeout" from="gotas_lava/2/2" to="." method="_on_2_timeout"]
