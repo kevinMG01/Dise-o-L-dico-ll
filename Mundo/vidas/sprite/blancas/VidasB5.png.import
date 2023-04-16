@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boton blanco normal.png-d5642438002ad80a0ccecba30c433e57.stex"
+path="res://.import/VidasB5.png-f3c174538175cd0bfe701aef2e7b74c6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/boton_player_l/boton blanco normal.png"
-dest_files=[ "res://.import/boton blanco normal.png-d5642438002ad80a0ccecba30c433e57.stex" ]
+source_file="res://Mundo/vidas/sprite/blancas/VidasB5.png"
+dest_files=[ "res://.import/VidasB5.png-f3c174538175cd0bfe701aef2e7b74c6.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -80,7 +80,7 @@ position = Vector2( 120, 400 )
 position = Vector2( -19, 19 )
 
 [node name="plataforma_player_l2" parent="plata_player_l" instance=ExtResource( 6 )]
-position = Vector2( -20, -102 )
+position = Vector2( -20, -116 )
 
 [node name="plataforma_player_l3" parent="plata_player_l" instance=ExtResource( 6 )]
 position = Vector2( 790, -256 )

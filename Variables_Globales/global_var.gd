@@ -17,8 +17,20 @@ var vida = 5
 var cantidad = 1
 var cantidad_j_2 = 1
 
+
+
+var camviar_posicion_1 = false
+var camviar_posicion_2 = false
+
+
 func _physics_process(delta):
 	pass
 
 func actualizar_tiempo():
 	get_tree().get_nodes_in_group("tiempo")[0].text = String(tiempo)
+	
+
+	
+
+
+
