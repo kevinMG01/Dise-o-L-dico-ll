@@ -34,7 +34,7 @@ func _physics_process(delta):
 
 
 func _on_Area2D_body_entered(body):
-	if body.get_name() == "suelo":
+	if body.is_in_group("suelo"):
 		self.queue_free()
 	if body.get_name() == "Player_l":
 		global_Var.vida -= 1
