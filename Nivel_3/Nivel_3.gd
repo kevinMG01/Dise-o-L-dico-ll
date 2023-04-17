@@ -25,6 +25,7 @@ func _process(delta):
 
 func _physics_process(delta):
 	spawn()
+	niveles()
 	_rotacion_player_1_1()
 	_rotacion_player_1_2()
 	_rotacion_player_1_3()
@@ -113,3 +114,18 @@ func spawn():
 		spawn_2 = true
 		global_Var.cantidad_j_2 = 1
 
+func niveles():
+	if global_Var.tiempo <= 0:
+		get_tree().change_scene("res://Menu/Menu.tscn")
+		global_Var.tiempo = 50
+		global_Var.puntos_player_1 = 0
+		global_Var.vida = 5
+		
+	if global_Var.puntos_player_1 == 18:
+		global_Var.nivel = 4
+		get_tree().change_scene("res://Nivel_4/Nivel_4.tscn")
+		
+	if global_Var.vida == 0:
+		global_Var.puntos_player_1 = 0
+		get_tree().change_scene("res://Menu/Menu.tscn")
+		global_Var.vida = 5

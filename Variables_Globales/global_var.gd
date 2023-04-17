@@ -22,6 +22,15 @@ var cantidad_j_2 = 1
 var camviar_posicion_1 = false
 var camviar_posicion_2 = false
 
+var camviar_posicion_boton_2 = false
+var camviar_posicion_boton_1 = false
+
+
+var puntos_p_1 = 0
+var puntos_p_2 = 0
+var nivel_4 = false
+
+var nivel = 1
 
 func _physics_process(delta):
 	pass

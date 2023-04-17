@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Mundo/suelo/fon_b.png" type="Texture" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
@@ -8,7 +8,8 @@
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Mundo/Boton_aleatorio/1/boton_aleatorio_1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Player_ll/Player_ll.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Mundo/fondo/fondo_mun.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9, 312.5 )
@@ -24,6 +25,9 @@ extents = Vector2( 28.5, 332 )
 
 [node name="Nivel_4" type="Node2D"]
 script = ExtResource( 5 )
+
+[node name="fondo_mun" parent="." instance=ExtResource( 10 )]
+position = Vector2( -5, -2 )
 
 [node name="lava_img" type="Node2D" parent="."]
 
@@ -185,9 +189,6 @@ scale = Vector2( 0.1, 1 )
 position = Vector2( 922, 570 )
 scale = Vector2( 0.15, 1 )
 
-[node name="Player_l" parent="." instance=ExtResource( 3 )]
-position = Vector2( 427, 563 )
-
 [node name="gotas_lava" type="Node2D" parent="."]
 
 [node name="1" type="Position2D" parent="gotas_lava" groups=["spawn_gota_1"]]
@@ -218,47 +219,92 @@ position = Vector2( 32, 312 )
 [node name="enemigo_2" parent="enemigo" instance=ExtResource( 8 )]
 position = Vector2( 992, 312 )
 
-[node name="boton_aleatorio_1" parent="." instance=ExtResource( 9 )]
-position = Vector2( 307, 471 )
+[node name="mision_estrellas_2" type="Node2D" parent="."]
 
-[node name="mision_estrellas" type="Node2D" parent="."]
-
-[node name="1" type="Position2D" parent="mision_estrellas" groups=["spawn_est_1"]]
+[node name="1" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_1"]]
 position = Vector2( 672, 96 )
 
-[node name="2" type="Position2D" parent="mision_estrellas" groups=["spawn_est_2"]]
+[node name="2" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_2"]]
 position = Vector2( 992, 168 )
 
-[node name="3" type="Position2D" parent="mision_estrellas" groups=["spawn_est_3"]]
+[node name="3" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_3"]]
 position = Vector2( 736, 288 )
 
-[node name="4" type="Position2D" parent="mision_estrellas" groups=["spawn_est_4"]]
+[node name="4" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_4"]]
 position = Vector2( 960, 496 )
 
-[node name="5" type="Position2D" parent="mision_estrellas" groups=["spawn_est_5"]]
+[node name="5" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_5"]]
 position = Vector2( 632, 568 )
 
-[node name="6" type="Position2D" parent="mision_estrellas" groups=["spawn_est_6"]]
+[node name="6" type="Position2D" parent="mision_estrellas_2" groups=["spawn_est_6"]]
 position = Vector2( 640, 448 )
 
-[node name="mision_estrellas2" type="Node2D" parent="."]
+[node name="mision_boton_2" type="Node2D" parent="."]
 
-[node name="boton" type="Node2D" parent="mision_estrellas2"]
+[node name="boton" type="Node2D" parent="mision_boton_2"]
 
-[node name="1" type="Position2D" parent="mision_estrellas2/boton" groups=["b_2_1"]]
+[node name="1" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_1"]]
 position = Vector2( 307, 472 )
 
-[node name="2" type="Position2D" parent="mision_estrellas2/boton" groups=["b_2_2"]]
+[node name="2" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_2"]]
 position = Vector2( 43, 212 )
 
-[node name="3" type="Position2D" parent="mision_estrellas2/boton" groups=["b_2_3"]]
+[node name="3" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_3"]]
 position = Vector2( 64, 532 )
 
-[node name="4" type="Position2D" parent="mision_estrellas2/boton" groups=["b_2_4"]]
+[node name="4" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_4"]]
 position = Vector2( 400, 149 )
 
-[node name="5" type="Position2D" parent="mision_estrellas2/boton" groups=["b_2_5"]]
+[node name="5" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_5"]]
 position = Vector2( 294, 330 )
+
+[node name="Player_ll" parent="." instance=ExtResource( 9 )]
+position = Vector2( 800, 312 )
+
+[node name="Player_l" parent="." instance=ExtResource( 3 )]
+position = Vector2( 427, 563 )
+
+[node name="mision_estrellas_1" type="Node2D" parent="."]
+visible = false
+
+[node name="1" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_1"]]
+position = Vector2( 303, 136 )
+
+[node name="2" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_2"]]
+position = Vector2( 24, 152 )
+
+[node name="3" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_3"]]
+position = Vector2( 288, 280 )
+
+[node name="4" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_4"]]
+position = Vector2( 370, 456 )
+
+[node name="5" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_5"]]
+position = Vector2( 116, 511 )
+
+[node name="6" type="Position2D" parent="mision_estrellas_1" groups=["spawn_estrellas_6"]]
+position = Vector2( 384, 576 )
+
+[node name="mision_boton_1" type="Node2D" parent="."]
+
+[node name="1" type="Position2D" parent="mision_boton_1" groups=["b_1_1"]]
+position = Vector2( 720, 464 )
+
+[node name="2" type="Position2D" parent="mision_boton_1" groups=["b_1_2"]]
+position = Vector2( 952, 212 )
+
+[node name="3" type="Position2D" parent="mision_boton_1" groups=["b_1_3"]]
+position = Vector2( 673, 144 )
+
+[node name="4" type="Position2D" parent="mision_boton_1" groups=["b_1_4"]]
+position = Vector2( 696, 315 )
+
+[node name="5" type="Position2D" parent="mision_boton_1" groups=["b_1_6"]]
+position = Vector2( 909, 520 )
+
+[node name="player_1" type="Position2D" parent="."]
+
+[node name="player_2" type="Position2D" parent="."]
 
 [connection signal="timeout" from="gotas_lava/1/1" to="." method="_on_1_timeout"]
 [connection signal="timeout" from="gotas_lava/2/2" to="." method="_on_2_timeout"]

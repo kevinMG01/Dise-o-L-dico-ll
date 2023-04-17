@@ -15,7 +15,7 @@ func _ready():
 
 
 func _on_boton_aleatorio_1_body_entered(body):
-	if body.is_in_group("player_l"):
+	if body.is_in_group("player_ll"):
 		$AnimatedSprite.animation = "pre"
 		global_Var.camviar_posicion_1 = true
 		queue_free()

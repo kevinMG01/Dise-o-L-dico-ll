@@ -103,7 +103,9 @@ func niveles():
 		global_Var.puntos_player_1 = 0
 		global_Var.vida = 5
 	if global_Var.puntos_player_1 == 12:
+		global_Var.nivel = 3
 		get_tree().change_scene("res://Nivel_3/Nivel_3.tscn")
+		global_Var.tiempo = 80
 		
 	if global_Var.vida == 0:
 		global_Var.puntos_player_1 = 0

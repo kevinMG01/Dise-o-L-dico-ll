@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=2]
@@ -13,12 +13,18 @@
 [ext_resource path="res://Item/boton_player_l/boton_2/bot_play_l_2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Mundo/vidas/vidas.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Item/estrellas/Negras/estrella_negra.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Mundo/fondo/fondo_mun.tscn" type="PackedScene" id=16]
 
 [node name="Nivel_3" type="Node2D"]
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
+
+[node name="fondo_mun" parent="." instance=ExtResource( 16 )]
+position = Vector2( 0, 4 )
 
 [node name="vidas" parent="." instance=ExtResource( 13 )]
 position = Vector2( 247, 188 )
@@ -131,10 +137,10 @@ position = Vector2( 91, 370 )
 [node name="enemigo_rotante" type="Node" parent="Enemigos"]
 
 [node name="enemigo_2" parent="Enemigos/enemigo_rotante" instance=ExtResource( 4 )]
-position = Vector2( 844, 568 )
+position = Vector2( 1008, 568 )
 
 [node name="enemigo_1" parent="Enemigos/enemigo_rotante" instance=ExtResource( 4 )]
-position = Vector2( 244.353, 566 )
+position = Vector2( 142, 570 )
 
 [node name="lava" type="Node" parent="Enemigos"]
 
@@ -145,10 +151,10 @@ position = Vector2( 713, 338 )
 position = Vector2( 907, 182 )
 
 [node name="player_1" type="Position2D" parent="." groups=["spawn_1"]]
-position = Vector2( 464, 566 )
+position = Vector2( 481, 566 )
 
 [node name="player_2" type="Position2D" parent="." groups=["spawn_2"]]
-position = Vector2( 662, 576 )
+position = Vector2( 655, 575 )
 
 [node name="boton_player_1" type="Node2D" parent="."]
 
@@ -171,3 +177,25 @@ position = Vector2( 643, 247 )
 
 [node name="bot_player_1_3" parent="boton_player_2" instance=ExtResource( 12 )]
 position = Vector2( 722, 476 )
+
+[node name="estrellas_1" type="Node2D" parent="."]
+
+[node name="estrella_blanca" parent="estrellas_1" instance=ExtResource( 15 )]
+position = Vector2( 999, 466 )
+
+[node name="estrella_blanca2" parent="estrellas_1" instance=ExtResource( 15 )]
+position = Vector2( 335, 290 )
+
+[node name="estrella_blanca3" parent="estrellas_1" instance=ExtResource( 15 )]
+position = Vector2( 39, 96 )
+
+[node name="estrellas_2" type="Node2D" parent="."]
+
+[node name="estrella_negra" parent="estrellas_2" instance=ExtResource( 14 )]
+position = Vector2( 35, 462 )
+
+[node name="estrella_negra2" parent="estrellas_2" instance=ExtResource( 14 )]
+position = Vector2( 33, 218 )
+
+[node name="estrella_negra3" parent="estrellas_2" instance=ExtResource( 14 )]
+position = Vector2( 1001, 60 )

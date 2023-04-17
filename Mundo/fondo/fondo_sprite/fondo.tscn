@@ -6,16 +6,27 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "move",
-"speed": 2.0
+"name": "1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
 } ]
 
 [node name="fondo" type="Node2D"]
 position = Vector2( -1, 0 )
 script = ExtResource( 2 )
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
 [node name="fondo_ani" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "move"
+animation = "1"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
