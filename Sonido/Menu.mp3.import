@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Menu.mp3-5edf3dad842b03208d59859aa808aaa1.mp3str"
+
+[deps]
+
+source_file="res://Sonido/Menu.mp3"
+dest_files=[ "res://.import/Menu.mp3-5edf3dad842b03208d59859aa808aaa1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

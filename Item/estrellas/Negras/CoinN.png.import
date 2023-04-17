@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/estrella negra.png-35e356744c8a78e59ed33e56e70d0477.stex"
+path="res://.import/CoinN.png-a38a4ee24ac29b8daeabe14c6adaba7f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/estrellas/Negras/estrella negra.png"
-dest_files=[ "res://.import/estrella negra.png-35e356744c8a78e59ed33e56e70d0477.stex" ]
+source_file="res://Item/estrellas/Negras/CoinN.png"
+dest_files=[ "res://.import/CoinN.png-a38a4ee24ac29b8daeabe14c6adaba7f.stex" ]
 
 [params]
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lvl 1  2 y 3.mp3-509576e8f9abd00bf76068e53e27b4a7.mp3str"
+
+[deps]
+
+source_file="res://Sonido/Lvl 1  2 y 3.mp3"
+dest_files=[ "res://.import/Lvl 1  2 y 3.mp3-509576e8f9abd00bf76068e53e27b4a7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

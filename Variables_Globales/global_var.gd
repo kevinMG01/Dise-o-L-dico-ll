@@ -32,7 +32,10 @@ var nivel_4 = false
 
 var nivel = 1
 
+var nivel_cambio_moneda = false
+
 func _physics_process(delta):
+	
 	pass
 
 func actualizar_tiempo():

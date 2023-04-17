@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/perder una vida.mp3-299cac743ffdd2d6735024b0f2c65172.mp3str"
+
+[deps]
+
+source_file="res://Sonido/perder una vida.mp3"
+dest_files=[ "res://.import/perder una vida.mp3-299cac743ffdd2d6735024b0f2c65172.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

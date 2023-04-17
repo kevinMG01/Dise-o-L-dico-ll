@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Item/estrellas/Negras/estrella_negra.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Mundo/fondo/fondo_mun.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sonido/Lvl 1  2 y 3.mp3" type="AudioStream" id=17]
 
 [node name="Nivel_3" type="Node2D"]
 script = ExtResource( 7 )
@@ -27,9 +28,40 @@ __meta__ = {
 position = Vector2( 0, 4 )
 
 [node name="vidas" parent="." instance=ExtResource( 13 )]
-position = Vector2( 247, 188 )
+position = Vector2( 211, 216 )
 
 [node name="fondo" type="Node" parent="."]
+
+[node name="plat_play_1" type="Node" parent="."]
+
+[node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 2 )]
+position = Vector2( 323, 494 )
+
+[node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 2 )]
+position = Vector2( 135, 248 )
+
+[node name="Plataforma_player_l3" parent="plat_play_1" instance=ExtResource( 2 )]
+position = Vector2( 981, 128 )
+
+[node name="Plataforma_player_l4" parent="plat_play_1" instance=ExtResource( 2 )]
+position = Vector2( 318, 407 )
+
+[node name="plat_play_2" type="Node" parent="."]
+
+[node name="plataforma_player_ll" parent="plat_play_2" instance=ExtResource( 3 )]
+position = Vector2( 885, 495 )
+
+[node name="plataforma_player_ll2" parent="plat_play_2" instance=ExtResource( 3 )]
+position = Vector2( 320, 371 )
+
+[node name="plataforma_player_ll3" parent="plat_play_2" instance=ExtResource( 3 )]
+position = Vector2( 387, 126 )
+
+[node name="plataforma_player_ll4" parent="plat_play_2" instance=ExtResource( 3 )]
+position = Vector2( 158, 126 )
+
+[node name="plataforma_player_ll5" parent="plat_play_2" instance=ExtResource( 3 )]
+position = Vector2( 91, 370 )
 
 [node name="suelo_piso" type="Node" parent="."]
 
@@ -90,7 +122,7 @@ position = Vector2( 776, 147 )
 scale = Vector2( 0.4, 0.7 )
 
 [node name="suelo10" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
-position = Vector2( 941, 383 )
+position = Vector2( 928, 384 )
 scale = Vector2( 0.2, 0.7 )
 
 [node name="suelo11" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
@@ -98,39 +130,8 @@ position = Vector2( 981, 21 )
 scale = Vector2( 0.1, 0.7 )
 
 [node name="suelo12" parent="suelo_piso/suelo_coli" instance=ExtResource( 1 )]
-position = Vector2( 685, 20 )
+position = Vector2( 685, 22 )
 scale = Vector2( 0.13, 0.7 )
-
-[node name="plat_play_1" type="Node" parent="."]
-
-[node name="Plataforma_player_l" parent="plat_play_1" instance=ExtResource( 2 )]
-position = Vector2( 323, 494 )
-
-[node name="Plataforma_player_l2" parent="plat_play_1" instance=ExtResource( 2 )]
-position = Vector2( 135, 248 )
-
-[node name="Plataforma_player_l3" parent="plat_play_1" instance=ExtResource( 2 )]
-position = Vector2( 981, 128 )
-
-[node name="Plataforma_player_l4" parent="plat_play_1" instance=ExtResource( 2 )]
-position = Vector2( 318, 407 )
-
-[node name="plat_play_2" type="Node" parent="."]
-
-[node name="plataforma_player_ll" parent="plat_play_2" instance=ExtResource( 3 )]
-position = Vector2( 885, 495 )
-
-[node name="plataforma_player_ll2" parent="plat_play_2" instance=ExtResource( 3 )]
-position = Vector2( 320, 371 )
-
-[node name="plataforma_player_ll3" parent="plat_play_2" instance=ExtResource( 3 )]
-position = Vector2( 387, 126 )
-
-[node name="plataforma_player_ll4" parent="plat_play_2" instance=ExtResource( 3 )]
-position = Vector2( 158, 126 )
-
-[node name="plataforma_player_ll5" parent="plat_play_2" instance=ExtResource( 3 )]
-position = Vector2( 91, 370 )
 
 [node name="Enemigos" type="Node" parent="."]
 
@@ -140,12 +141,12 @@ position = Vector2( 91, 370 )
 position = Vector2( 1008, 568 )
 
 [node name="enemigo_1" parent="Enemigos/enemigo_rotante" instance=ExtResource( 4 )]
-position = Vector2( 142, 570 )
+position = Vector2( 136, 570 )
 
 [node name="lava" type="Node" parent="Enemigos"]
 
 [node name="Enemigo" parent="Enemigos/lava" instance=ExtResource( 5 )]
-position = Vector2( 713, 338 )
+position = Vector2( 702, 338 )
 
 [node name="Enemigo2" parent="Enemigos/lava" instance=ExtResource( 5 )]
 position = Vector2( 907, 182 )
@@ -199,3 +200,30 @@ position = Vector2( 33, 218 )
 
 [node name="estrella_negra3" parent="estrellas_2" instance=ExtResource( 14 )]
 position = Vector2( 1001, 60 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -5.0
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="tiempo" type="Label" parent="CanvasLayer" groups=["tiempo"]]
+margin_left = 628.0
+margin_top = -8.0
+margin_right = 668.0
+margin_bottom = 6.0
+rect_scale = Vector2( 3, 4 )
+
+[node name="tex tiempo" type="Label" parent="CanvasLayer"]
+margin_left = 311.0
+margin_top = -4.0
+margin_right = 359.0
+margin_bottom = 10.0
+rect_scale = Vector2( 3, 4 )
+text = "Tiempo"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

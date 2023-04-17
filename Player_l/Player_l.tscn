@@ -4,8 +4,8 @@
 [ext_resource path="res://Player_l/Player_l.gd" type="Script" id=2]
 [ext_resource path="res://Player_l/Sprite/J1Jump.png" type="Texture" id=3]
 [ext_resource path="res://Player_l/Sprite/J1iddle.png" type="Texture" id=4]
-[ext_resource path="res://Player_l/pasos.wav" type="AudioStream" id=5]
-[ext_resource path="res://Player_l/al saltar 2.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Sonido/Saltar.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Sonido/Caminar.mp3" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -46,10 +46,11 @@ shape = SubResource( 2 )
 wait_time = 0.5
 
 [node name="salto" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
-volume_db = -12.0
+stream = ExtResource( 5 )
+volume_db = 1.0
+pitch_scale = 10.0
 
 [node name="Pasos" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

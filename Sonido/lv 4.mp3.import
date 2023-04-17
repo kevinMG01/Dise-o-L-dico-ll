@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lv 4.mp3-acb73b5649f496c53ad06bba6d7a7f54.mp3str"
+
+[deps]
+
+source_file="res://Sonido/lv 4.mp3"
+dest_files=[ "res://.import/lv 4.mp3-acb73b5649f496c53ad06bba6d7a7f54.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

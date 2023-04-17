@@ -1,14 +1,12 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Mundo/suelo/fon_b.png" type="Texture" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Player_l/Player_l.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemigo_sin_colicion/lava/enemigo lava.png" type="Texture" id=4]
 [ext_resource path="res://Nivel_4/Nivel_4.gd" type="Script" id=5]
 [ext_resource path="res://Item/Plataforma_player_l/plataforma_player_l.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Item/Plataforma_player_ll/plataforma_player_ll.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemigo_sin_colicion/Enemigo_1/enemigo_1.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Player_ll/Player_ll.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Mundo/fondo/fondo_mun.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -258,12 +256,6 @@ position = Vector2( 400, 149 )
 [node name="5" type="Position2D" parent="mision_boton_2/boton" groups=["b_2_5"]]
 position = Vector2( 294, 330 )
 
-[node name="Player_ll" parent="." instance=ExtResource( 9 )]
-position = Vector2( 800, 312 )
-
-[node name="Player_l" parent="." instance=ExtResource( 3 )]
-position = Vector2( 427, 563 )
-
 [node name="mision_estrellas_1" type="Node2D" parent="."]
 visible = false
 
@@ -302,9 +294,11 @@ position = Vector2( 696, 315 )
 [node name="5" type="Position2D" parent="mision_boton_1" groups=["b_1_6"]]
 position = Vector2( 909, 520 )
 
-[node name="player_1" type="Position2D" parent="."]
+[node name="player_1" type="Position2D" parent="." groups=["spawn_1"]]
+position = Vector2( 360, 573 )
 
-[node name="player_2" type="Position2D" parent="."]
+[node name="player_2" type="Position2D" parent="." groups=["spawn_2"]]
+position = Vector2( 600, 568 )
 
 [connection signal="timeout" from="gotas_lava/1/1" to="." method="_on_1_timeout"]
 [connection signal="timeout" from="gotas_lava/2/2" to="." method="_on_2_timeout"]

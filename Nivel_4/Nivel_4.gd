@@ -1,5 +1,12 @@
 extends Node2D
 
+var spawn_1 = true
+var spawn_2 = true
+
+var player_1 = preload("res://Player_l/Player_l.tscn")
+var player_2 = preload("res://Player_ll/Player_ll.tscn")
+
+
 var gota_1 = true
 var gota_2 = true
 var gota_3 = true
@@ -42,6 +49,7 @@ func boton_comienzo():
 		newplayer.global_position = get_tree().get_nodes_in_group("b_1_1")[0].global_position
 
 func _physics_process(delta):
+	spawn()
 	posicion_estrella_2()
 	posicion_boton_2()
 	posicion_estrella_1()
@@ -49,17 +57,34 @@ func _physics_process(delta):
 	pass
 
 func spawn():
+	if spawn_1 == true:
+		var newplayer = player_1.instance()
+		add_child(newplayer)
+		newplayer.global_position = get_tree().get_nodes_in_group("spawn_1")[0].global_position
+		spawn_1 = false
+	if global_Var.cantidad == 0:
+		spawn_1 = true
+		global_Var.cantidad = 1
+	
+	if spawn_2 == true:
+		var newplayer_2 = player_2.instance()
+		add_child(newplayer_2)
+		newplayer_2.global_position = get_tree().get_nodes_in_group("spawn_2")[0].global_position
+		spawn_2 = false
+	if global_Var.cantidad_j_2 == 0:
+		spawn_2 = true
+		global_Var.cantidad_j_2 = 1
+
+
+func spawn_g():
 	if gota_1 == true:
 		var newplayer = _gotas_1.instance()
 		add_child(newplayer)
 		newplayer.global_position = get_tree().get_nodes_in_group("spawn_gota_1")[0].global_position
 
 
-
-
-
 func _on_1_timeout():
-	spawn()
+	spawn_g()
 	if gota_1 == true:
 		var newplayer = _gotas_1.instance()
 		add_child(newplayer)

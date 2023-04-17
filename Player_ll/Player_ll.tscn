@@ -4,8 +4,8 @@
 [ext_resource path="res://Player_ll/Player_ll.gd" type="Script" id=2]
 [ext_resource path="res://Player_ll/Sprite/J2iddle.png" type="Texture" id=3]
 [ext_resource path="res://Player_ll/Sprite/J2move.png" type="Texture" id=4]
-[ext_resource path="res://Player_l/pasos.wav" type="AudioStream" id=5]
-[ext_resource path="res://Player_l/al saltar 2.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Sonido/Saltar.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Sonido/Caminar.mp3" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -42,8 +42,9 @@ position = Vector2( 0, 3 )
 shape = SubResource( 2 )
 
 [node name="Pasos" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
+volume_db = 1.0
 
 [node name="salto" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
-volume_db = -12.0
+stream = ExtResource( 5 )
+volume_db = 10.0

@@ -68,10 +68,11 @@ func jump():
 func sonidos():
 	if Input.is_action_pressed("a"):
 		if is_on_floor():
-			$Pasos.play()
+			$Pasos.playing = true
 	if Input.is_action_pressed("d"):
 		if is_on_floor():
-			$Pasos.play()
+			$Pasos.playing = true
+
 	if is_on_floor():
 		if Input.is_action_just_pressed("w"):
 			$salto.play()

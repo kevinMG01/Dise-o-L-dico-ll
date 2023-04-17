@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Item/estrellas/Blancas/estrella_blanca.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/boton_player_ll/boton_1/boton_player_ll.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Nivel_2/Nivel_2.gd" type="Script" id=15]
 [ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=16]
+[ext_resource path="res://Sonido/Lvl 1  2 y 3.mp3" type="AudioStream" id=17]
 
 [node name="Nivel_2" type="Node2D"]
 script = ExtResource( 15 )
@@ -66,6 +67,28 @@ scale = Vector2( 0.1, 10 )
 
 [node name="vidas" parent="." instance=ExtResource( 12 )]
 position = Vector2( 100, 26 )
+
+[node name="platafor_negro" type="Node2D" parent="."]
+
+[node name="plataforma_player_ll" parent="platafor_negro" instance=ExtResource( 6 )]
+position = Vector2( 243, 243 )
+
+[node name="plataforma_player_ll2" parent="platafor_negro" instance=ExtResource( 6 )]
+position = Vector2( 810, 371 )
+
+[node name="plataforma_player_ll3" parent="platafor_negro" instance=ExtResource( 6 )]
+position = Vector2( 236, 111 )
+
+[node name="platafor_Blancas" type="Node2D" parent="."]
+
+[node name="Plataforma_player_l" parent="platafor_Blancas" instance=ExtResource( 7 )]
+position = Vector2( 720, 483 )
+
+[node name="Plataforma_player_l2" parent="platafor_Blancas" instance=ExtResource( 7 )]
+position = Vector2( 215, 368 )
+
+[node name="Plataforma_player_l3" parent="platafor_Blancas" instance=ExtResource( 7 )]
+position = Vector2( 847, 115 )
 
 [node name="platafor_soli" type="Node2D" parent="."]
 
@@ -119,28 +142,6 @@ position = Vector2( 989, 73 )
 [node name="estrella_blanca3" parent="estrellas_Blancas" instance=ExtResource( 1 )]
 position = Vector2( 44, 328 )
 
-[node name="platafor_negro" type="Node2D" parent="."]
-
-[node name="plataforma_player_ll" parent="platafor_negro" instance=ExtResource( 6 )]
-position = Vector2( 243, 243 )
-
-[node name="plataforma_player_ll2" parent="platafor_negro" instance=ExtResource( 6 )]
-position = Vector2( 810, 371 )
-
-[node name="plataforma_player_ll3" parent="platafor_negro" instance=ExtResource( 6 )]
-position = Vector2( 236, 111 )
-
-[node name="platafor_Blancas" type="Node2D" parent="."]
-
-[node name="Plataforma_player_l" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 720, 483 )
-
-[node name="Plataforma_player_l2" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 215, 368 )
-
-[node name="Plataforma_player_l3" parent="platafor_Blancas" instance=ExtResource( 7 )]
-position = Vector2( 847, 115 )
-
 [node name="bot_play_1" type="Node2D" parent="."]
 
 [node name="boton_player_l" parent="bot_play_1" instance=ExtResource( 4 )]
@@ -177,5 +178,10 @@ position = Vector2( 582, 552 )
 
 [node name="Position2_p_2" type="Position2D" parent="." groups=["spawn_2"]]
 position = Vector2( 348, 550 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -5.0
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

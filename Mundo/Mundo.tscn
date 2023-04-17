@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Mundo/vidas/vidas.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mundo/suelo/suelo.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Item/boton_player_l/boton_3/bot_play_l_3.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Item/boton_player_ll/boton_2/bot_player_1_2.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Item/boton_player_ll/boton_3/bot_player_1_3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sonido/Lvl 1  2 y 3.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Mundo/fon_tiempo.png" type="Texture" id=17]
 
 [node name="Mundo" type="Node2D" groups=["nivel_1"]]
@@ -148,5 +149,10 @@ position = Vector2( 92, 489 )
 
 [node name="vidas" parent="." instance=ExtResource( 1 )]
 position = Vector2( 43, 25 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -5.0
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

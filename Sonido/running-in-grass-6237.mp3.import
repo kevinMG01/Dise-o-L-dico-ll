@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/running-in-grass-6237.mp3-9dda6a619ffce61ae99be5ae2e6a2c80.mp3str"
+
+[deps]
+
+source_file="res://Sonido/running-in-grass-6237.mp3"
+dest_files=[ "res://.import/running-in-grass-6237.mp3-9dda6a619ffce61ae99be5ae2e6a2c80.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
