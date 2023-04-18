@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Menu/controles/controles.gd" type="Script" id=1]
 [ext_resource path="res://Menu/controles/Tuto.png" type="Texture" id=2]
 [ext_resource path="res://Sonido/Menu.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Menu/controles/Panalla Advertencia (1).png" type="Texture" id=4]
 
 [node name="controles" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,14 +13,19 @@ position = Vector2( 512, 297 )
 scale = Vector2( 2.1, 1.33 )
 texture = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 275.0
-margin_top = 413.0
-margin_right = 369.0
-margin_bottom = 444.0
-rect_scale = Vector2( 3, 2 )
-text = "Presione enter"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 autoplay = true
+
+[node name="adb" type="Sprite" parent="."]
+position = Vector2( 509.75, 297.5 )
+scale = Vector2( 1.23939, 1.4925 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 382.0
+margin_top = 40.0
+margin_right = 476.0
+margin_bottom = 71.0
+rect_scale = Vector2( 3, 2 )
+text = "Presione enter"

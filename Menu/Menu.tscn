@@ -3,19 +3,19 @@
 [ext_resource path="res://Menu/inicio/inicio.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Menu/creditos/creditos.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menu/salir.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Menu/menu2.jpg" type="Texture" id=4]
+[ext_resource path="res://Menu/Panalla Menu Re Escalado.png" type="Texture" id=4]
 [ext_resource path="res://Sonido/Menu.mp3" type="AudioStream" id=5]
 
 [node name="Menu" type="Node2D"]
 
 [node name="Menu2" type="Sprite" parent="."]
-position = Vector2( 511, 307 )
-scale = Vector2( 1.6, 1 )
+position = Vector2( 513.188, 302 )
+scale = Vector2( 1.24561, 1.485 )
 texture = ExtResource( 4 )
 
 [node name="inicio" parent="." instance=ExtResource( 1 )]
-margin_left = 316.0
-margin_top = 306.0
+margin_left = 304.0
+margin_top = 304.0
 margin_right = 700.0
 margin_bottom = 374.0
 

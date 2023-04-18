@@ -32,7 +32,7 @@ var nivel_4 = false
 
 var nivel = 1
 
-var nivel_cambio_moneda = false
+var nivel_cambio_moneda = true
 var vida_nivel_4 = 2
 
 func _physics_process(delta):
