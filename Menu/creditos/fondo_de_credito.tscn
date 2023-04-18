@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu/creditos/regreso_menu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Menu/sprite/Panalla Creditos.png" type="Texture" id=2]
+[ext_resource path="res://Sonido/Menu.mp3" type="AudioStream" id=3]
 
 [node name="fondo_de_credito" type="Node2D"]
 
@@ -11,7 +12,11 @@ scale = Vector2( 1.24, 1.51 )
 texture = ExtResource( 2 )
 
 [node name="regreso_menu" parent="." instance=ExtResource( 1 )]
-margin_left = 777.0
-margin_top = 91.0
-margin_right = 837.0
-margin_bottom = 151.0
+margin_left = 863.0
+margin_top = 73.0
+margin_right = 965.0
+margin_bottom = 127.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true

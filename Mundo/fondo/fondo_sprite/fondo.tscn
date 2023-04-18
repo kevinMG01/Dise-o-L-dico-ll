@@ -29,4 +29,18 @@ autostart = true
 frames = SubResource( 1 )
 animation = "1"
 
+[node name="dos" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="tres" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="cuatro" type="Timer" parent="."]
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="dos" to="." method="_on_dos_timeout"]
+[connection signal="timeout" from="tres" to="." method="_on_tres_timeout"]
+[connection signal="timeout" from="cuatro" to="." method="_on_cuatro_timeout"]

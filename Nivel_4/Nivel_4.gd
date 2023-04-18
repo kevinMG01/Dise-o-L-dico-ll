@@ -50,6 +50,7 @@ func boton_comienzo():
 
 func _physics_process(delta):
 	spawn()
+	niveles()
 	posicion_estrella_2()
 	posicion_boton_2()
 	posicion_estrella_1()
@@ -237,3 +238,12 @@ func posicion_boton_1():
 			add_child(newplayer)
 			newplayer.global_position = get_tree().get_nodes_in_group("b_1_6")[0].global_position
 		global_Var.camviar_posicion_boton_1 = false
+
+
+func niveles():
+	if global_Var.vida_nivel_4 == 0:
+		get_tree().change_scene("res://fin/fin.tscn")
+		global_Var.tiempo = 50
+		global_Var.puntos_player_1 = 0
+		global_Var.vida = 5
+

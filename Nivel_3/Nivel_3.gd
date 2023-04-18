@@ -124,7 +124,7 @@ func niveles():
 	if global_Var.puntos_player_1 == 18:
 		global_Var.nivel = 4
 		global_Var.nivel_cambio_moneda = true
-		get_tree().change_scene("res://Nivel_4/Nivel_4.tscn")
+		get_tree().change_scene("res://Menu/nivel_3_y_4/entre_3_4.tscn")
 		
 	if global_Var.vida == 0:
 		global_Var.puntos_player_1 = 0

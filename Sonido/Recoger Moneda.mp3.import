@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Recoger Moneda.mp3-fcb2e9924dc5043b58d5989c0d99358b.
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

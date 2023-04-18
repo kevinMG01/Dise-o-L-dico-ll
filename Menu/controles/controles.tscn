@@ -13,14 +13,12 @@ scale = Vector2( 2.1, 1.33 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 311.0
-margin_top = 88.0
-margin_right = 405.0
-margin_bottom = 144.0
-rect_scale = Vector2( 5, 5 )
-text = "controles
-
-presione enter"
+margin_left = 275.0
+margin_top = 413.0
+margin_right = 369.0
+margin_bottom = 444.0
+rect_scale = Vector2( 3, 2 )
+text = "Presione enter"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
